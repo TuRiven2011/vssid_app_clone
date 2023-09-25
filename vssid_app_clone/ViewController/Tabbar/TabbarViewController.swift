@@ -40,14 +40,20 @@ class TabbarViewController: ESTabBarController {
         self.tabBar.backgroundColor = .white
         self.tabBar.layer.borderWidth = 1
         self.tabBar.layer.borderColor = UIColor.black.withAlphaComponent(0.1).cgColor
+        self.navigationController?.navigationBar.isHidden = true
+        self.navigationController?.isNavigationBarHidden = true
     }
     
     
     private func initItem() {
+        let searchVC = SearchViewController.instantiate { coder in
+            return SearchViewController(coder: coder)
+        }
         
-        let tab1NavigationController = UINavigationController(rootViewController: LoginViewController())
-        let tab2NavigationController = UINavigationController(rootViewController: LoginViewController())
-        let tab3NavigationController = UINavigationController(rootViewController: LoginViewController())
+        
+        let tab1NavigationController = UINavigationController(rootViewController: InforViewController())
+        let tab2NavigationController = UINavigationController(rootViewController: ServiceViewController())
+        let tab3NavigationController = UINavigationController(rootViewController: searchVC)
         let tab4NavigationController = UINavigationController(rootViewController: HelpViewController())
         
         tab1NavigationController.tabBarItem = tab1
@@ -64,4 +70,27 @@ class TabbarViewController: ESTabBarController {
         
     }
     
+}
+
+protocol StoryBoardIdentifiable: class {
+    static var storyboard: UIStoryboard { get }
+}
+
+extension StoryBoardIdentifiable {
+    static var storyboard: UIStoryboard {
+        return UIStoryboard(name: String(describing: self), bundle: Bundle(for: self))
+    }
+}
+
+extension StoryBoardIdentifiable where Self: UIViewController {
+    
+    static func instantiate(creator: @escaping (NSCoder) -> Self?) -> Self {
+        return storyboard.instantiateViewController(identifier: storyboardIdentifier, creator: creator)
+    }
+}
+
+extension UIViewController: StoryBoardIdentifiable {
+    static var storyboardIdentifier: String {
+        return String(describing: self)
+    }
 }

@@ -24,6 +24,28 @@
 		47D378202AC07E52008759D4 /* HelpTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47D378152AC07E51008759D4 /* HelpTableViewCell.xib */; };
 		47D378212AC07E52008759D4 /* HelpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D378162AC07E51008759D4 /* HelpTableViewCell.swift */; };
 		47D378222AC07E52008759D4 /* CommonEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D378182AC07E52008759D4 /* CommonEnum.swift */; };
+		822E187A2AC09C1E00C35308 /* ServiceEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822E18792AC09C1E00C35308 /* ServiceEntity.swift */; };
+		822E187E2AC11BEE00C35308 /* InforViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822E187C2AC11BEE00C35308 /* InforViewController.swift */; };
+		822E187F2AC11BEE00C35308 /* InforViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 822E187D2AC11BEE00C35308 /* InforViewController.xib */; };
+		822E18832AC122B300C35308 /* InforTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822E18812AC122B300C35308 /* InforTableViewCell.swift */; };
+		822E18842AC122B300C35308 /* InforTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 822E18822AC122B300C35308 /* InforTableViewCell.xib */; };
+		822E18882AC1333700C35308 /* ServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822E18862AC1333700C35308 /* ServiceViewController.swift */; };
+		822E18892AC1333700C35308 /* ServiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 822E18872AC1333700C35308 /* ServiceViewController.xib */; };
+		822E188D2AC137C000C35308 /* ServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822E188B2AC137C000C35308 /* ServiceTableViewCell.swift */; };
+		822E188E2AC137C000C35308 /* ServiceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 822E188C2AC137C000C35308 /* ServiceTableViewCell.xib */; };
+		822E18922AC1B4DD00C35308 /* InsuranceInforViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822E18902AC1B4DD00C35308 /* InsuranceInforViewController.swift */; };
+		822E18932AC1B4DD00C35308 /* InsuranceInforViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 822E18912AC1B4DD00C35308 /* InsuranceInforViewController.xib */; };
+		822E18972AC1C12900C35308 /* UseCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822E18952AC1C12900C35308 /* UseCardViewController.swift */; };
+		822E18982AC1C12900C35308 /* UseCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 822E18962AC1C12900C35308 /* UseCardViewController.xib */; };
+		822E189C2AC1C79B00C35308 /* InsuranceExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822E189A2AC1C79B00C35308 /* InsuranceExampleViewController.swift */; };
+		822E189D2AC1C79B00C35308 /* InsuranceExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 822E189B2AC1C79B00C35308 /* InsuranceExampleViewController.xib */; };
+		822E18A12AC1E60700C35308 /* InsuranceProgessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822E189F2AC1E60700C35308 /* InsuranceProgessViewController.swift */; };
+		822E18A22AC1E60700C35308 /* InsuranceProgessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 822E18A02AC1E60700C35308 /* InsuranceProgessViewController.xib */; };
+		822E18A62AC1E8EA00C35308 /* InsuranceProgressCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822E18A42AC1E8EA00C35308 /* InsuranceProgressCollectionViewCell.swift */; };
+		822E18A72AC1E8EA00C35308 /* InsuranceProgressCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 822E18A52AC1E8EA00C35308 /* InsuranceProgressCollectionViewCell.xib */; };
+		825F403F2AC0871500546E60 /* SearchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 825F403E2AC0871500546E60 /* SearchViewController.storyboard */; };
+		825F40422AC0874E00546E60 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825F40412AC0874E00546E60 /* SearchViewController.swift */; };
+		825F40442AC08B7F00546E60 /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825F40432AC08B7F00546E60 /* SearchCollectionViewCell.swift */; };
 		E5C7D969B6F67CA5B666C024 /* Pods_vssid_app_clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39F5399B48EAF98F34A80C6 /* Pods_vssid_app_clone.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +70,28 @@
 		47D378162AC07E51008759D4 /* HelpTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpTableViewCell.swift; sourceTree = "<group>"; };
 		47D378182AC07E52008759D4 /* CommonEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonEnum.swift; sourceTree = "<group>"; };
 		6A3709DAC0AE9D182E20755D /* Pods-vssid_app_clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vssid_app_clone.debug.xcconfig"; path = "Target Support Files/Pods-vssid_app_clone/Pods-vssid_app_clone.debug.xcconfig"; sourceTree = "<group>"; };
+		822E18792AC09C1E00C35308 /* ServiceEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ServiceEntity.swift; path = vssid_app_clone/ViewController/Search/ServiceEntity.swift; sourceTree = SOURCE_ROOT; };
+		822E187C2AC11BEE00C35308 /* InforViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InforViewController.swift; sourceTree = "<group>"; };
+		822E187D2AC11BEE00C35308 /* InforViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InforViewController.xib; sourceTree = "<group>"; };
+		822E18812AC122B300C35308 /* InforTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InforTableViewCell.swift; sourceTree = "<group>"; };
+		822E18822AC122B300C35308 /* InforTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InforTableViewCell.xib; sourceTree = "<group>"; };
+		822E18862AC1333700C35308 /* ServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceViewController.swift; sourceTree = "<group>"; };
+		822E18872AC1333700C35308 /* ServiceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceViewController.xib; sourceTree = "<group>"; };
+		822E188B2AC137C000C35308 /* ServiceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTableViewCell.swift; sourceTree = "<group>"; };
+		822E188C2AC137C000C35308 /* ServiceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceTableViewCell.xib; sourceTree = "<group>"; };
+		822E18902AC1B4DD00C35308 /* InsuranceInforViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsuranceInforViewController.swift; sourceTree = "<group>"; };
+		822E18912AC1B4DD00C35308 /* InsuranceInforViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InsuranceInforViewController.xib; sourceTree = "<group>"; };
+		822E18952AC1C12900C35308 /* UseCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCardViewController.swift; sourceTree = "<group>"; };
+		822E18962AC1C12900C35308 /* UseCardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UseCardViewController.xib; sourceTree = "<group>"; };
+		822E189A2AC1C79B00C35308 /* InsuranceExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsuranceExampleViewController.swift; sourceTree = "<group>"; };
+		822E189B2AC1C79B00C35308 /* InsuranceExampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InsuranceExampleViewController.xib; sourceTree = "<group>"; };
+		822E189F2AC1E60700C35308 /* InsuranceProgessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsuranceProgessViewController.swift; sourceTree = "<group>"; };
+		822E18A02AC1E60700C35308 /* InsuranceProgessViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InsuranceProgessViewController.xib; sourceTree = "<group>"; };
+		822E18A42AC1E8EA00C35308 /* InsuranceProgressCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsuranceProgressCollectionViewCell.swift; sourceTree = "<group>"; };
+		822E18A52AC1E8EA00C35308 /* InsuranceProgressCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InsuranceProgressCollectionViewCell.xib; sourceTree = "<group>"; };
+		825F403E2AC0871500546E60 /* SearchViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchViewController.storyboard; sourceTree = "<group>"; };
+		825F40412AC0874E00546E60 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		825F40432AC08B7F00546E60 /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
 		AA584329380BAF88C692F388 /* Pods-vssid_app_clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vssid_app_clone.release.xcconfig"; path = "Target Support Files/Pods-vssid_app_clone/Pods-vssid_app_clone.release.xcconfig"; sourceTree = "<group>"; };
 		B39F5399B48EAF98F34A80C6 /* Pods_vssid_app_clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vssid_app_clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -131,6 +175,7 @@
 		47D378072AC07E51008759D4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				822E18792AC09C1E00C35308 /* ServiceEntity.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -148,8 +193,10 @@
 				4784B9C22AC1DD16003A2C07 /* SideMenu */,
 				47D3780A2AC07E51008759D4 /* Splash */,
 				47D3780B2AC07E51008759D4 /* Tabbar */,
-				47D3780D2AC07E51008759D4 /* Search */,
 				47D3780E2AC07E51008759D4 /* Login */,
+				822E18852AC1331400C35308 /* Service */,
+				822E187B2AC11B8800C35308 /* Infor */,
+				825F40402AC0871A00546E60 /* Search */,
 				47D378112AC07E51008759D4 /* Help */,
 			);
 			path = ViewController;
@@ -168,13 +215,6 @@
 				47D3780C2AC07E51008759D4 /* TabbarViewController.swift */,
 			);
 			path = Tabbar;
-			sourceTree = "<group>";
-		};
-		47D3780D2AC07E51008759D4 /* Search */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Search;
 			sourceTree = "<group>";
 		};
 		47D3780E2AC07E51008759D4 /* Login */ = {
@@ -226,6 +266,112 @@
 				B39F5399B48EAF98F34A80C6 /* Pods_vssid_app_clone.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		822E18782AC0965900C35308 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				825F40432AC08B7F00546E60 /* SearchCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		822E187B2AC11B8800C35308 /* Infor */ = {
+			isa = PBXGroup;
+			children = (
+				822E187C2AC11BEE00C35308 /* InforViewController.swift */,
+				822E187D2AC11BEE00C35308 /* InforViewController.xib */,
+				822E188F2AC1B49100C35308 /* InsuranceInfor */,
+				822E189E2AC1E5BE00C35308 /* InsuranceProgress */,
+				822E18802AC1228900C35308 /* Cell */,
+			);
+			path = Infor;
+			sourceTree = "<group>";
+		};
+		822E18802AC1228900C35308 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				822E18812AC122B300C35308 /* InforTableViewCell.swift */,
+				822E18822AC122B300C35308 /* InforTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		822E18852AC1331400C35308 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				822E18862AC1333700C35308 /* ServiceViewController.swift */,
+				822E18872AC1333700C35308 /* ServiceViewController.xib */,
+				822E188A2AC137A200C35308 /* Cell */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		822E188A2AC137A200C35308 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				822E188B2AC137C000C35308 /* ServiceTableViewCell.swift */,
+				822E188C2AC137C000C35308 /* ServiceTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		822E188F2AC1B49100C35308 /* InsuranceInfor */ = {
+			isa = PBXGroup;
+			children = (
+				822E18902AC1B4DD00C35308 /* InsuranceInforViewController.swift */,
+				822E18912AC1B4DD00C35308 /* InsuranceInforViewController.xib */,
+				822E18942AC1C0B800C35308 /* UseCardView */,
+				822E18992AC1C75F00C35308 /* InsuranceExample */,
+			);
+			path = InsuranceInfor;
+			sourceTree = "<group>";
+		};
+		822E18942AC1C0B800C35308 /* UseCardView */ = {
+			isa = PBXGroup;
+			children = (
+				822E18952AC1C12900C35308 /* UseCardViewController.swift */,
+				822E18962AC1C12900C35308 /* UseCardViewController.xib */,
+			);
+			path = UseCardView;
+			sourceTree = "<group>";
+		};
+		822E18992AC1C75F00C35308 /* InsuranceExample */ = {
+			isa = PBXGroup;
+			children = (
+				822E189A2AC1C79B00C35308 /* InsuranceExampleViewController.swift */,
+				822E189B2AC1C79B00C35308 /* InsuranceExampleViewController.xib */,
+			);
+			path = InsuranceExample;
+			sourceTree = "<group>";
+		};
+		822E189E2AC1E5BE00C35308 /* InsuranceProgress */ = {
+			isa = PBXGroup;
+			children = (
+				822E189F2AC1E60700C35308 /* InsuranceProgessViewController.swift */,
+				822E18A02AC1E60700C35308 /* InsuranceProgessViewController.xib */,
+				822E18A32AC1E88800C35308 /* InsuranceProgressCell */,
+			);
+			path = InsuranceProgress;
+			sourceTree = "<group>";
+		};
+		822E18A32AC1E88800C35308 /* InsuranceProgressCell */ = {
+			isa = PBXGroup;
+			children = (
+				822E18A42AC1E8EA00C35308 /* InsuranceProgressCollectionViewCell.swift */,
+				822E18A52AC1E8EA00C35308 /* InsuranceProgressCollectionViewCell.xib */,
+			);
+			path = InsuranceProgressCell;
+			sourceTree = "<group>";
+		};
+		825F40402AC0871A00546E60 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				825F40412AC0874E00546E60 /* SearchViewController.swift */,
+				825F403E2AC0871500546E60 /* SearchViewController.storyboard */,
+				822E18782AC0965900C35308 /* Cell */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,11 +434,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				822E18982AC1C12900C35308 /* UseCardViewController.xib in Resources */,
+				822E18892AC1333700C35308 /* ServiceViewController.xib in Resources */,
 				4784B9C62AC1DD4E003A2C07 /* SideMenuViewController.storyboard in Resources */,
 				47D3781C2AC07E52008759D4 /* LoginViewController.xib in Resources */,
 				47D3781F2AC07E52008759D4 /* HelpViewController.xib in Resources */,
 				47D377FE2AC07DAD008759D4 /* LaunchScreen.storyboard in Resources */,
+				825F403F2AC0871500546E60 /* SearchViewController.storyboard in Resources */,
+				822E18842AC122B300C35308 /* InforTableViewCell.xib in Resources */,
 				47D377FB2AC07DAD008759D4 /* Assets.xcassets in Resources */,
+				822E18A22AC1E60700C35308 /* InsuranceProgessViewController.xib in Resources */,
+				822E189D2AC1C79B00C35308 /* InsuranceExampleViewController.xib in Resources */,
+				822E188E2AC137C000C35308 /* ServiceTableViewCell.xib in Resources */,
+				822E18932AC1B4DD00C35308 /* InsuranceInforViewController.xib in Resources */,
+				822E18A72AC1E8EA00C35308 /* InsuranceProgressCollectionViewCell.xib in Resources */,
+				822E187F2AC11BEE00C35308 /* InforViewController.xib in Resources */,
 				47D378202AC07E52008759D4 /* HelpTableViewCell.xib in Resources */,
 				47D377F92AC07DAC008759D4 /* Main.storyboard in Resources */,
 			);
@@ -347,10 +503,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				822E18A62AC1E8EA00C35308 /* InsuranceProgressCollectionViewCell.swift in Sources */,
+				822E187A2AC09C1E00C35308 /* ServiceEntity.swift in Sources */,
+				822E18832AC122B300C35308 /* InforTableViewCell.swift in Sources */,
+				822E18A12AC1E60700C35308 /* InsuranceProgessViewController.swift in Sources */,
 				47D3781B2AC07E52008759D4 /* TabbarViewController.swift in Sources */,
 				47D378222AC07E52008759D4 /* CommonEnum.swift in Sources */,
+				822E189C2AC1C79B00C35308 /* InsuranceExampleViewController.swift in Sources */,
+				822E18882AC1333700C35308 /* ServiceViewController.swift in Sources */,
 				4784B9C82AC1DE3D003A2C07 /* UIViewControllerExtension.swift in Sources */,
 				47D3781E2AC07E52008759D4 /* HelpViewController.swift in Sources */,
+				825F40422AC0874E00546E60 /* SearchViewController.swift in Sources */,
+				822E188D2AC137C000C35308 /* ServiceTableViewCell.swift in Sources */,
+				822E187E2AC11BEE00C35308 /* InforViewController.swift in Sources */,
+				825F40442AC08B7F00546E60 /* SearchCollectionViewCell.swift in Sources */,
+				822E18922AC1B4DD00C35308 /* InsuranceInforViewController.swift in Sources */,
+				822E18972AC1C12900C35308 /* UseCardViewController.swift in Sources */,
 				47D378212AC07E52008759D4 /* HelpTableViewCell.swift in Sources */,
 				47D3781A2AC07E52008759D4 /* ViewExtension.swift in Sources */,
 				47D377F62AC07DAC008759D4 /* ViewController.swift in Sources */,
