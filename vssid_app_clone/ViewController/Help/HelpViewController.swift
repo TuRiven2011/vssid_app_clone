@@ -10,6 +10,7 @@ import UIKit
 class HelpViewController: UIViewController {
 
     @IBOutlet weak var helpTableView: UITableView!
+    @IBOutlet weak var headerImage: UIImageView!
     
     let listData: [HelpEnum] = [
         .userManual,
@@ -22,6 +23,8 @@ class HelpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        headerImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tesst)))
         
         configTableView()
 
@@ -36,7 +39,13 @@ class HelpViewController: UIViewController {
     }
     
     
-
+    @objc func tesst() {
+        let vc = SideMenuViewController.instantiate { coder in
+            return SideMenuViewController(coder: coder)
+        }
+        
+        navigationController?.pushViewController(vc, animated: true)
+    }
 
 
 

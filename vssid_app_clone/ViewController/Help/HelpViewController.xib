@@ -9,8 +9,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HelpViewController" customModule="clone_vssid" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HelpViewController" customModule="vssid_app_clone" customModuleProvider="target">
             <connections>
+                <outlet property="headerImage" destination="MX8-3z-TyR" id="gut-nv-O9l"/>
                 <outlet property="helpTableView" destination="xzu-5B-wMc" id="eFf-6f-le4"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -20,7 +21,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="new_slide_hotro" translatesAutoresizingMaskIntoConstraints="NO" id="MX8-3z-TyR">
+                <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="new_slide_hotro" translatesAutoresizingMaskIntoConstraints="NO" id="MX8-3z-TyR">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="200" id="kJJ-vg-MVM"/>
