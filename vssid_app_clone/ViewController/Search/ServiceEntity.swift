@@ -18,3 +18,8 @@ struct InforEntity {
     var image: UIImage
     var title: String
 }
+
+struct QuestionEntity {
+    var question: String
+    var answer: String
+}
