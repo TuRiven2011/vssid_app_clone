@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -19,34 +19,44 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="430-c7-sS9">
-                        <rect key="frame" x="10" y="10" width="40" height="40"/>
+                        <rect key="frame" x="10" y="10" width="34" height="34"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="40" id="4M6-L8-fQo"/>
-                            <constraint firstAttribute="width" constant="40" id="bct-Oe-kwu"/>
+                            <constraint firstAttribute="height" constant="34" id="4M6-L8-fQo"/>
+                            <constraint firstAttribute="width" constant="34" id="bct-Oe-kwu"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEu-88-lim">
-                        <rect key="frame" x="70" y="10" width="287" height="68.333333333333329"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" systemColor="linkColor"/>
+                        <rect key="frame" x="58" y="10" width="299" height="66.333333333333329"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                        <color key="textColor" red="0.16862745098039217" green="0.396078431372549" blue="0.67450980392156867" alpha="1" colorSpace="deviceRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="705-2I-VoP">
-                        <rect key="frame" x="70" y="88.333333333333329" width="267" height="15.666666666666671"/>
+                        <rect key="frame" x="58" y="76.333333333333329" width="279" height="15.666666666666671"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kg6-lW-dtC">
+                        <rect key="frame" x="58" y="102" width="279" height="1"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="WM6-lU-xs9"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="tEu-88-lim" firstAttribute="leading" secondItem="430-c7-sS9" secondAttribute="trailing" constant="20" id="05s-4x-GWP"/>
+                    <constraint firstItem="tEu-88-lim" firstAttribute="leading" secondItem="430-c7-sS9" secondAttribute="trailing" constant="14" id="05s-4x-GWP"/>
                     <constraint firstItem="430-c7-sS9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="N2e-Kb-Um9"/>
+                    <constraint firstAttribute="bottom" secondItem="Kg6-lW-dtC" secondAttribute="bottom" constant="1" id="NfF-mX-97R"/>
                     <constraint firstItem="tEu-88-lim" firstAttribute="top" secondItem="430-c7-sS9" secondAttribute="top" id="Y7C-NU-olv"/>
-                    <constraint firstItem="705-2I-VoP" firstAttribute="leading" secondItem="430-c7-sS9" secondAttribute="trailing" constant="20" id="cfR-PN-3t5"/>
+                    <constraint firstItem="705-2I-VoP" firstAttribute="leading" secondItem="430-c7-sS9" secondAttribute="trailing" constant="14" id="cfR-PN-3t5"/>
+                    <constraint firstItem="Kg6-lW-dtC" firstAttribute="leading" secondItem="705-2I-VoP" secondAttribute="leading" id="crp-nv-Jgq"/>
                     <constraint firstAttribute="trailingMargin" secondItem="705-2I-VoP" secondAttribute="trailing" id="dtm-tk-puW"/>
+                    <constraint firstItem="Kg6-lW-dtC" firstAttribute="top" secondItem="705-2I-VoP" secondAttribute="bottom" constant="10" id="ja8-zd-tDF"/>
                     <constraint firstItem="430-c7-sS9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="l0j-8r-jVK"/>
-                    <constraint firstItem="705-2I-VoP" firstAttribute="top" secondItem="tEu-88-lim" secondAttribute="bottom" constant="10" id="qMt-a1-7k7"/>
-                    <constraint firstAttribute="bottom" secondItem="705-2I-VoP" secondAttribute="bottom" id="vl3-H2-DbU"/>
+                    <constraint firstItem="705-2I-VoP" firstAttribute="top" secondItem="tEu-88-lim" secondAttribute="bottom" id="qMt-a1-7k7"/>
+                    <constraint firstAttribute="trailing" secondItem="Kg6-lW-dtC" secondAttribute="trailing" constant="20" id="sbQ-ZE-VWX"/>
                     <constraint firstAttribute="trailing" secondItem="tEu-88-lim" secondAttribute="trailing" id="vzJ-IK-zSh"/>
                 </constraints>
             </tableViewCellContentView>
@@ -60,8 +70,8 @@
     </objects>
     <resources>
         <image name="logo" width="324" height="321"/>
-        <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

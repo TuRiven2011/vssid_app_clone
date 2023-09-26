@@ -6,9 +6,10 @@
 //
 
 import UIKit
+import MessageUI
 
 class HelpViewController: UIViewController {
-
+    
     @IBOutlet weak var helpTableView: UITableView!
     @IBOutlet weak var headerImage: UIImageView!
     
@@ -27,10 +28,11 @@ class HelpViewController: UIViewController {
         headerImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tesst)))
         
         configTableView()
-
+        
         // Do any additional setup after loading the view.
     }
     
+    /// thiết lập tableView
     private func configTableView() {
         helpTableView.register(.init(nibName: "HelpTableViewCell", bundle: nil), forCellReuseIdentifier: "HelpTableViewCell")
         helpTableView.dataSource = self
@@ -39,18 +41,37 @@ class HelpViewController: UIViewController {
     }
     
     
+    /// gửi email
+    private func sendEmail() {
+        
+        if !MFMailComposeViewController.canSendMail() {
+            print("Mail services are not available")
+            return
+        } else {
+            let composeVC = MFMailComposeViewController()
+            composeVC.mailComposeDelegate = self
+             
+            // Configure the fields of the interface.
+            composeVC.setToRecipients(["address@example.com"])
+            composeVC.setSubject("Hello!")
+            composeVC.setMessageBody("Hello from California!", isHTML: false)
+            self.present(composeVC, animated: true, completion: nil)
+        }
+    }
+}
+
+
+/// objc function
+extension HelpViewController {
     @objc func tesst() {
         let vc = SideMenuViewController.instantiate { coder in
             return SideMenuViewController(coder: coder)
         }
-        
         navigationController?.pushViewController(vc, animated: true)
     }
-
-
-
 }
 
+/// tableView Delegate, Datasource
 extension HelpViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return listData.count
@@ -63,9 +84,34 @@ extension HelpViewController: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch listData[indexPath.row] {
+        case .userManual:
+            CommonUtils.shared.openURL(urlString: "https://baohiemxahoi.gov.vn/gioithieu/Pages/tai-ung-dung-vssid.aspx")
+        case .chatBot:
+            break
+        case .hotline:
+            CommonUtils.shared.makePhoneCall(phoneNumber: "1900 9068")
+        case .email:
+            sendEmail()
+        case .question:
+            break
+        case .request:
+            CommonUtils.shared.openURL(urlString: "https://baohiemxahoi.gov.vn/chuyen-trang-bhxh-bhyt-va-phan-anh-kien-nghi/Pages/default.aspx")
+        }
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 90
     }
     
     
+}
+
+
+/// email Delegate
+extension HelpViewController: MFMailComposeViewControllerDelegate {
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true, completion: nil)
+    }
 }

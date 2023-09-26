@@ -12,6 +12,7 @@
 		4784B9C82AC1DE3D003A2C07 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4784B9C72AC1DE3D003A2C07 /* UIViewControllerExtension.swift */; };
 		4784B9CA2AC30A00003A2C07 /* AppNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4784B9C92AC30A00003A2C07 /* AppNavigator.swift */; };
 		4784B9CC2AC30C39003A2C07 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4784B9CB2AC30C39003A2C07 /* Constant.swift */; };
+		4784B9CE2AC34FF6003A2C07 /* CommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4784B9CD2AC34FF6003A2C07 /* CommonUtils.swift */; };
 		47D377F22AC07DAC008759D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D377F12AC07DAC008759D4 /* AppDelegate.swift */; };
 		47D377F62AC07DAC008759D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D377F52AC07DAC008759D4 /* ViewController.swift */; };
 		47D377F92AC07DAC008759D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47D377F72AC07DAC008759D4 /* Main.storyboard */; };
@@ -71,6 +72,7 @@
 		4784B9C72AC1DE3D003A2C07 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		4784B9C92AC30A00003A2C07 /* AppNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigator.swift; sourceTree = "<group>"; };
 		4784B9CB2AC30C39003A2C07 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		4784B9CD2AC34FF6003A2C07 /* CommonUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUtils.swift; sourceTree = "<group>"; };
 		47D377EE2AC07DAC008759D4 /* vssid_app_clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vssid_app_clone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47D377F12AC07DAC008759D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47D377F52AC07DAC008759D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -287,6 +289,7 @@
 			children = (
 				47D378182AC07E52008759D4 /* CommonEnum.swift */,
 				4784B9CB2AC30C39003A2C07 /* Constant.swift */,
+				4784B9CD2AC34FF6003A2C07 /* CommonUtils.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -620,6 +623,7 @@
 				822E18832AC122B300C35308 /* InforTableViewCell.swift in Sources */,
 				822E18A12AC1E60700C35308 /* InsuranceProgessViewController.swift in Sources */,
 				47D3781B2AC07E52008759D4 /* TabbarViewController.swift in Sources */,
+				4784B9CE2AC34FF6003A2C07 /* CommonUtils.swift in Sources */,
 				47D378222AC07E52008759D4 /* CommonEnum.swift in Sources */,
 				822E189C2AC1C79B00C35308 /* InsuranceExampleViewController.swift in Sources */,
 				82EB8B622AC359D900ADB2D4 /* CommonQuestionTableViewCell.swift in Sources */,
