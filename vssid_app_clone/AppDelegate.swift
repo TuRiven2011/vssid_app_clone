@@ -19,8 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         guard let window = window else {return false}
         
-        let tabbarController = TabbarViewController()
-//        let tabbarController = LoginViewController()
+//        let tabbarController = TabbarViewController()
+        let tabbarController = LoginViewController()
         
         let navigationController = UINavigationController(rootViewController: tabbarController)
         

@@ -15,7 +15,7 @@
 		47D377F92AC07DAC008759D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47D377F72AC07DAC008759D4 /* Main.storyboard */; };
 		47D377FB2AC07DAD008759D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47D377FA2AC07DAD008759D4 /* Assets.xcassets */; };
 		47D377FE2AC07DAD008759D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47D377FC2AC07DAD008759D4 /* LaunchScreen.storyboard */; };
-		47D3781A2AC07E52008759D4 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D378062AC07E51008759D4 /* ViewExtension.swift */; };
+		47D3781A2AC07E52008759D4 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D378062AC07E51008759D4 /* UIViewExtension.swift */; };
 		47D3781B2AC07E52008759D4 /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D3780C2AC07E51008759D4 /* TabbarViewController.swift */; };
 		47D3781C2AC07E52008759D4 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47D3780F2AC07E51008759D4 /* LoginViewController.xib */; };
 		47D3781D2AC07E52008759D4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D378102AC07E51008759D4 /* LoginViewController.swift */; };
@@ -60,7 +60,7 @@
 		47D377FA2AC07DAD008759D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47D377FD2AC07DAD008759D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47D377FF2AC07DAD008759D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		47D378062AC07E51008759D4 /* ViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		47D378062AC07E51008759D4 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		47D3780C2AC07E51008759D4 /* TabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
 		47D3780F2AC07E51008759D4 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		47D378102AC07E51008759D4 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -166,7 +166,7 @@
 		47D378052AC07E51008759D4 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				47D378062AC07E51008759D4 /* ViewExtension.swift */,
+				47D378062AC07E51008759D4 /* UIViewExtension.swift */,
 				4784B9C72AC1DE3D003A2C07 /* UIViewControllerExtension.swift */,
 			);
 			path = Extension;
@@ -520,7 +520,7 @@
 				822E18922AC1B4DD00C35308 /* InsuranceInforViewController.swift in Sources */,
 				822E18972AC1C12900C35308 /* UseCardViewController.swift in Sources */,
 				47D378212AC07E52008759D4 /* HelpTableViewCell.swift in Sources */,
-				47D3781A2AC07E52008759D4 /* ViewExtension.swift in Sources */,
+				47D3781A2AC07E52008759D4 /* UIViewExtension.swift in Sources */,
 				47D377F62AC07DAC008759D4 /* ViewController.swift in Sources */,
 				47D3781D2AC07E52008759D4 /* LoginViewController.swift in Sources */,
 				4784B9C42AC1DD43003A2C07 /* SideMenuViewController.swift in Sources */,
