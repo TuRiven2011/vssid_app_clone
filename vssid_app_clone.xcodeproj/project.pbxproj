@@ -24,6 +24,8 @@
 		47D378202AC07E52008759D4 /* HelpTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47D378152AC07E51008759D4 /* HelpTableViewCell.xib */; };
 		47D378212AC07E52008759D4 /* HelpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D378162AC07E51008759D4 /* HelpTableViewCell.swift */; };
 		47D378222AC07E52008759D4 /* CommonEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D378182AC07E52008759D4 /* CommonEnum.swift */; };
+		82057F842AC3090D001AFE14 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82057F822AC3090D001AFE14 /* ChangePasswordViewController.swift */; };
+		82057F852AC3090D001AFE14 /* ChangePasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82057F832AC3090D001AFE14 /* ChangePasswordViewController.xib */; };
 		822E187A2AC09C1E00C35308 /* ServiceEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822E18792AC09C1E00C35308 /* ServiceEntity.swift */; };
 		822E187E2AC11BEE00C35308 /* InforViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822E187C2AC11BEE00C35308 /* InforViewController.swift */; };
 		822E187F2AC11BEE00C35308 /* InforViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 822E187D2AC11BEE00C35308 /* InforViewController.xib */; };
@@ -70,6 +72,8 @@
 		47D378162AC07E51008759D4 /* HelpTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpTableViewCell.swift; sourceTree = "<group>"; };
 		47D378182AC07E52008759D4 /* CommonEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonEnum.swift; sourceTree = "<group>"; };
 		6A3709DAC0AE9D182E20755D /* Pods-vssid_app_clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vssid_app_clone.debug.xcconfig"; path = "Target Support Files/Pods-vssid_app_clone/Pods-vssid_app_clone.debug.xcconfig"; sourceTree = "<group>"; };
+		82057F822AC3090D001AFE14 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		82057F832AC3090D001AFE14 /* ChangePasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangePasswordViewController.xib; sourceTree = "<group>"; };
 		822E18792AC09C1E00C35308 /* ServiceEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ServiceEntity.swift; path = vssid_app_clone/ViewController/Search/ServiceEntity.swift; sourceTree = SOURCE_ROOT; };
 		822E187C2AC11BEE00C35308 /* InforViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InforViewController.swift; sourceTree = "<group>"; };
 		822E187D2AC11BEE00C35308 /* InforViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InforViewController.xib; sourceTree = "<group>"; };
@@ -190,6 +194,7 @@
 		47D378092AC07E51008759D4 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				82057F812AC308CE001AFE14 /* ChangePassword */,
 				4784B9C22AC1DD16003A2C07 /* SideMenu */,
 				47D3780A2AC07E51008759D4 /* Splash */,
 				47D3780B2AC07E51008759D4 /* Tabbar */,
@@ -266,6 +271,15 @@
 				B39F5399B48EAF98F34A80C6 /* Pods_vssid_app_clone.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		82057F812AC308CE001AFE14 /* ChangePassword */ = {
+			isa = PBXGroup;
+			children = (
+				82057F822AC3090D001AFE14 /* ChangePasswordViewController.swift */,
+				82057F832AC3090D001AFE14 /* ChangePasswordViewController.xib */,
+			);
+			path = ChangePassword;
 			sourceTree = "<group>";
 		};
 		822E18782AC0965900C35308 /* Cell */ = {
@@ -450,6 +464,7 @@
 				822E18A72AC1E8EA00C35308 /* InsuranceProgressCollectionViewCell.xib in Resources */,
 				822E187F2AC11BEE00C35308 /* InforViewController.xib in Resources */,
 				47D378202AC07E52008759D4 /* HelpTableViewCell.xib in Resources */,
+				82057F852AC3090D001AFE14 /* ChangePasswordViewController.xib in Resources */,
 				47D377F92AC07DAC008759D4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -525,6 +540,7 @@
 				47D3781D2AC07E52008759D4 /* LoginViewController.swift in Sources */,
 				4784B9C42AC1DD43003A2C07 /* SideMenuViewController.swift in Sources */,
 				47D377F22AC07DAC008759D4 /* AppDelegate.swift in Sources */,
+				82057F842AC3090D001AFE14 /* ChangePasswordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
