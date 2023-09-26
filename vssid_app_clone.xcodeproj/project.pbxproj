@@ -27,6 +27,16 @@
 		47D378202AC07E52008759D4 /* HelpTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47D378152AC07E51008759D4 /* HelpTableViewCell.xib */; };
 		47D378212AC07E52008759D4 /* HelpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D378162AC07E51008759D4 /* HelpTableViewCell.swift */; };
 		47D378222AC07E52008759D4 /* CommonEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D378182AC07E52008759D4 /* CommonEnum.swift */; };
+		82057F842AC3090D001AFE14 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82057F822AC3090D001AFE14 /* ChangePasswordViewController.swift */; };
+		82057F852AC3090D001AFE14 /* ChangePasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82057F832AC3090D001AFE14 /* ChangePasswordViewController.xib */; };
+		82057F892AC31514001AFE14 /* TreatmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82057F872AC31514001AFE14 /* TreatmentViewController.swift */; };
+		82057F8A2AC31514001AFE14 /* TreatmentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82057F882AC31514001AFE14 /* TreatmentViewController.xib */; };
+		82057F8E2AC33242001AFE14 /* SearchPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82057F8C2AC33242001AFE14 /* SearchPlaceViewController.swift */; };
+		82057F8F2AC33242001AFE14 /* SearchPlaceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82057F8D2AC33242001AFE14 /* SearchPlaceViewController.xib */; };
+		82057F932AC343C7001AFE14 /* NotiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82057F912AC343C7001AFE14 /* NotiViewController.swift */; };
+		82057F942AC343C7001AFE14 /* NotiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82057F922AC343C7001AFE14 /* NotiViewController.xib */; };
+		82057F982AC35114001AFE14 /* CommonQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82057F962AC35114001AFE14 /* CommonQuestionViewController.swift */; };
+		82057F992AC35114001AFE14 /* CommonQuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82057F972AC35114001AFE14 /* CommonQuestionViewController.xib */; };
 		822E187A2AC09C1E00C35308 /* ServiceEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822E18792AC09C1E00C35308 /* ServiceEntity.swift */; };
 		822E187E2AC11BEE00C35308 /* InforViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822E187C2AC11BEE00C35308 /* InforViewController.swift */; };
 		822E187F2AC11BEE00C35308 /* InforViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 822E187D2AC11BEE00C35308 /* InforViewController.xib */; };
@@ -49,6 +59,10 @@
 		825F403F2AC0871500546E60 /* SearchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 825F403E2AC0871500546E60 /* SearchViewController.storyboard */; };
 		825F40422AC0874E00546E60 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825F40412AC0874E00546E60 /* SearchViewController.swift */; };
 		825F40442AC08B7F00546E60 /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825F40432AC08B7F00546E60 /* SearchCollectionViewCell.swift */; };
+		82EB8B622AC359D900ADB2D4 /* CommonQuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EB8B602AC359D900ADB2D4 /* CommonQuestionTableViewCell.swift */; };
+		82EB8B632AC359D900ADB2D4 /* CommonQuestionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82EB8B612AC359D900ADB2D4 /* CommonQuestionTableViewCell.xib */; };
+		82EB8B672AC35D1000ADB2D4 /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EB8B652AC35D1000ADB2D4 /* AnswerViewController.swift */; };
+		82EB8B682AC35D1000ADB2D4 /* AnswerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82EB8B662AC35D1000ADB2D4 /* AnswerViewController.xib */; };
 		E5C7D969B6F67CA5B666C024 /* Pods_vssid_app_clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39F5399B48EAF98F34A80C6 /* Pods_vssid_app_clone.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +90,16 @@
 		47D378162AC07E51008759D4 /* HelpTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpTableViewCell.swift; sourceTree = "<group>"; };
 		47D378182AC07E52008759D4 /* CommonEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonEnum.swift; sourceTree = "<group>"; };
 		6A3709DAC0AE9D182E20755D /* Pods-vssid_app_clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vssid_app_clone.debug.xcconfig"; path = "Target Support Files/Pods-vssid_app_clone/Pods-vssid_app_clone.debug.xcconfig"; sourceTree = "<group>"; };
+		82057F822AC3090D001AFE14 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		82057F832AC3090D001AFE14 /* ChangePasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangePasswordViewController.xib; sourceTree = "<group>"; };
+		82057F872AC31514001AFE14 /* TreatmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatmentViewController.swift; sourceTree = "<group>"; };
+		82057F882AC31514001AFE14 /* TreatmentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TreatmentViewController.xib; sourceTree = "<group>"; };
+		82057F8C2AC33242001AFE14 /* SearchPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlaceViewController.swift; sourceTree = "<group>"; };
+		82057F8D2AC33242001AFE14 /* SearchPlaceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchPlaceViewController.xib; sourceTree = "<group>"; };
+		82057F912AC343C7001AFE14 /* NotiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiViewController.swift; sourceTree = "<group>"; };
+		82057F922AC343C7001AFE14 /* NotiViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotiViewController.xib; sourceTree = "<group>"; };
+		82057F962AC35114001AFE14 /* CommonQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonQuestionViewController.swift; sourceTree = "<group>"; };
+		82057F972AC35114001AFE14 /* CommonQuestionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonQuestionViewController.xib; sourceTree = "<group>"; };
 		822E18792AC09C1E00C35308 /* ServiceEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ServiceEntity.swift; path = vssid_app_clone/ViewController/Search/ServiceEntity.swift; sourceTree = SOURCE_ROOT; };
 		822E187C2AC11BEE00C35308 /* InforViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InforViewController.swift; sourceTree = "<group>"; };
 		822E187D2AC11BEE00C35308 /* InforViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InforViewController.xib; sourceTree = "<group>"; };
@@ -98,6 +122,10 @@
 		825F403E2AC0871500546E60 /* SearchViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchViewController.storyboard; sourceTree = "<group>"; };
 		825F40412AC0874E00546E60 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		825F40432AC08B7F00546E60 /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		82EB8B602AC359D900ADB2D4 /* CommonQuestionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonQuestionTableViewCell.swift; sourceTree = "<group>"; };
+		82EB8B612AC359D900ADB2D4 /* CommonQuestionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonQuestionTableViewCell.xib; sourceTree = "<group>"; };
+		82EB8B652AC35D1000ADB2D4 /* AnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerViewController.swift; sourceTree = "<group>"; };
+		82EB8B662AC35D1000ADB2D4 /* AnswerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnswerViewController.xib; sourceTree = "<group>"; };
 		AA584329380BAF88C692F388 /* Pods-vssid_app_clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vssid_app_clone.release.xcconfig"; path = "Target Support Files/Pods-vssid_app_clone/Pods-vssid_app_clone.release.xcconfig"; sourceTree = "<group>"; };
 		B39F5399B48EAF98F34A80C6 /* Pods_vssid_app_clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vssid_app_clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -197,6 +225,10 @@
 		47D378092AC07E51008759D4 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				82057F952AC350E9001AFE14 /* CommonQuestion */,
+				82057F8B2AC3321E001AFE14 /* SearchPlaces */,
+				82057F862AC314F0001AFE14 /* TreatmentBook */,
+				82057F812AC308CE001AFE14 /* ChangePassword */,
 				4784B9C22AC1DD16003A2C07 /* SideMenu */,
 				47D3780A2AC07E51008759D4 /* Splash */,
 				47D3780B2AC07E51008759D4 /* Tabbar */,
@@ -275,6 +307,54 @@
 				B39F5399B48EAF98F34A80C6 /* Pods_vssid_app_clone.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		82057F812AC308CE001AFE14 /* ChangePassword */ = {
+			isa = PBXGroup;
+			children = (
+				82057F902AC343B4001AFE14 /* Noti */,
+				82057F822AC3090D001AFE14 /* ChangePasswordViewController.swift */,
+				82057F832AC3090D001AFE14 /* ChangePasswordViewController.xib */,
+			);
+			path = ChangePassword;
+			sourceTree = "<group>";
+		};
+		82057F862AC314F0001AFE14 /* TreatmentBook */ = {
+			isa = PBXGroup;
+			children = (
+				82057F872AC31514001AFE14 /* TreatmentViewController.swift */,
+				82057F882AC31514001AFE14 /* TreatmentViewController.xib */,
+			);
+			path = TreatmentBook;
+			sourceTree = "<group>";
+		};
+		82057F8B2AC3321E001AFE14 /* SearchPlaces */ = {
+			isa = PBXGroup;
+			children = (
+				82057F8C2AC33242001AFE14 /* SearchPlaceViewController.swift */,
+				82057F8D2AC33242001AFE14 /* SearchPlaceViewController.xib */,
+			);
+			path = SearchPlaces;
+			sourceTree = "<group>";
+		};
+		82057F902AC343B4001AFE14 /* Noti */ = {
+			isa = PBXGroup;
+			children = (
+				82057F912AC343C7001AFE14 /* NotiViewController.swift */,
+				82057F922AC343C7001AFE14 /* NotiViewController.xib */,
+			);
+			path = Noti;
+			sourceTree = "<group>";
+		};
+		82057F952AC350E9001AFE14 /* CommonQuestion */ = {
+			isa = PBXGroup;
+			children = (
+				82057F962AC35114001AFE14 /* CommonQuestionViewController.swift */,
+				82057F972AC35114001AFE14 /* CommonQuestionViewController.xib */,
+				82EB8B5F2AC356CE00ADB2D4 /* Cell */,
+				82EB8B642AC35CE800ADB2D4 /* Answer */,
+			);
+			path = CommonQuestion;
 			sourceTree = "<group>";
 		};
 		822E18782AC0965900C35308 /* Cell */ = {
@@ -383,6 +463,24 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
+		82EB8B5F2AC356CE00ADB2D4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				82EB8B602AC359D900ADB2D4 /* CommonQuestionTableViewCell.swift */,
+				82EB8B612AC359D900ADB2D4 /* CommonQuestionTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		82EB8B642AC35CE800ADB2D4 /* Answer */ = {
+			isa = PBXGroup;
+			children = (
+				82EB8B652AC35D1000ADB2D4 /* AnswerViewController.swift */,
+				82EB8B662AC35D1000ADB2D4 /* AnswerViewController.xib */,
+			);
+			path = Answer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -443,6 +541,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82EB8B632AC359D900ADB2D4 /* CommonQuestionTableViewCell.xib in Resources */,
 				822E18982AC1C12900C35308 /* UseCardViewController.xib in Resources */,
 				822E18892AC1333700C35308 /* ServiceViewController.xib in Resources */,
 				4784B9C62AC1DD4E003A2C07 /* SideMenuViewController.storyboard in Resources */,
@@ -450,15 +549,21 @@
 				47D3781F2AC07E52008759D4 /* HelpViewController.xib in Resources */,
 				47D377FE2AC07DAD008759D4 /* LaunchScreen.storyboard in Resources */,
 				825F403F2AC0871500546E60 /* SearchViewController.storyboard in Resources */,
+				82EB8B682AC35D1000ADB2D4 /* AnswerViewController.xib in Resources */,
+				82057F8A2AC31514001AFE14 /* TreatmentViewController.xib in Resources */,
 				822E18842AC122B300C35308 /* InforTableViewCell.xib in Resources */,
 				47D377FB2AC07DAD008759D4 /* Assets.xcassets in Resources */,
+				82057F942AC343C7001AFE14 /* NotiViewController.xib in Resources */,
 				822E18A22AC1E60700C35308 /* InsuranceProgessViewController.xib in Resources */,
+				82057F992AC35114001AFE14 /* CommonQuestionViewController.xib in Resources */,
 				822E189D2AC1C79B00C35308 /* InsuranceExampleViewController.xib in Resources */,
+				82057F8F2AC33242001AFE14 /* SearchPlaceViewController.xib in Resources */,
 				822E188E2AC137C000C35308 /* ServiceTableViewCell.xib in Resources */,
 				822E18932AC1B4DD00C35308 /* InsuranceInforViewController.xib in Resources */,
 				822E18A72AC1E8EA00C35308 /* InsuranceProgressCollectionViewCell.xib in Resources */,
 				822E187F2AC11BEE00C35308 /* InforViewController.xib in Resources */,
 				47D378202AC07E52008759D4 /* HelpTableViewCell.xib in Resources */,
+				82057F852AC3090D001AFE14 /* ChangePasswordViewController.xib in Resources */,
 				47D377F92AC07DAC008759D4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -521,11 +626,15 @@
 				4784B9CE2AC34FF6003A2C07 /* CommonUtils.swift in Sources */,
 				47D378222AC07E52008759D4 /* CommonEnum.swift in Sources */,
 				822E189C2AC1C79B00C35308 /* InsuranceExampleViewController.swift in Sources */,
+				82EB8B622AC359D900ADB2D4 /* CommonQuestionTableViewCell.swift in Sources */,
+				82EB8B672AC35D1000ADB2D4 /* AnswerViewController.swift in Sources */,
 				822E18882AC1333700C35308 /* ServiceViewController.swift in Sources */,
 				4784B9C82AC1DE3D003A2C07 /* UIViewControllerExtension.swift in Sources */,
 				47D3781E2AC07E52008759D4 /* HelpViewController.swift in Sources */,
+				82057F892AC31514001AFE14 /* TreatmentViewController.swift in Sources */,
 				4784B9CC2AC30C39003A2C07 /* Constant.swift in Sources */,
 				825F40422AC0874E00546E60 /* SearchViewController.swift in Sources */,
+				82057F8E2AC33242001AFE14 /* SearchPlaceViewController.swift in Sources */,
 				822E188D2AC137C000C35308 /* ServiceTableViewCell.swift in Sources */,
 				822E187E2AC11BEE00C35308 /* InforViewController.swift in Sources */,
 				825F40442AC08B7F00546E60 /* SearchCollectionViewCell.swift in Sources */,
@@ -535,8 +644,11 @@
 				47D3781A2AC07E52008759D4 /* UIViewExtension.swift in Sources */,
 				47D377F62AC07DAC008759D4 /* ViewController.swift in Sources */,
 				47D3781D2AC07E52008759D4 /* LoginViewController.swift in Sources */,
+				82057F982AC35114001AFE14 /* CommonQuestionViewController.swift in Sources */,
+				82057F932AC343C7001AFE14 /* NotiViewController.swift in Sources */,
 				4784B9C42AC1DD43003A2C07 /* SideMenuViewController.swift in Sources */,
 				47D377F22AC07DAC008759D4 /* AppDelegate.swift in Sources */,
+				82057F842AC3090D001AFE14 /* ChangePasswordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

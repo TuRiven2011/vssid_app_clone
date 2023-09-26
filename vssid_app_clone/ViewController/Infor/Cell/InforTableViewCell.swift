@@ -13,9 +13,11 @@ class InforTableViewCell: UITableViewCell {
     
     @IBOutlet weak var labelViewCell: UILabel!
     
+    @IBOutlet weak var rotationImage: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        rotationImage.transform = .identity.rotated(by: 3.1)
     }
 
     

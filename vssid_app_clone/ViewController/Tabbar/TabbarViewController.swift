@@ -52,7 +52,7 @@ class TabbarViewController: ESTabBarController {
         
         
         let tab1NavigationController = UINavigationController(rootViewController: InforViewController())
-        let tab2NavigationController = UINavigationController(rootViewController: ServiceViewController())
+        let tab2NavigationController = UINavigationController(rootViewController: ChangePasswordViewController())
         let tab3NavigationController = UINavigationController(rootViewController: searchVC)
         let tab4NavigationController = UINavigationController(rootViewController: HelpViewController())
         

@@ -25,7 +25,6 @@ class InforViewController: UIViewController {
     
     @IBOutlet weak var addressLbl: UILabel!
     
-    
     let listData: [InforEnum] = [.profileImage, .name, .insuranceId, .birthday, .personalID, .phone, .address]
     let listEntity : [InforEntity] = [
         .init(image: UIImage(named: "new_icon_the_bhyt")!, title: "THẺ BHYT"),
@@ -67,6 +66,7 @@ extension InforViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "InforTableViewCell", for: indexPath) as? InforTableViewCell else {return .init()}
         cell.binding(data: listEntity[indexPath.row])
+        cell.selectionStyle = .none
         return cell
     }
     
@@ -78,6 +78,12 @@ extension InforViewController: UITableViewDelegate, UITableViewDataSource {
         if indexPath.row == 1 {
             let vc = InsuranceProgessViewController()
             self.navigationController?.pushViewController(vc, animated: true)
+        }
+        
+        if indexPath.row == 3 {
+            let vc = TreatmentViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+            
         }
     }
     

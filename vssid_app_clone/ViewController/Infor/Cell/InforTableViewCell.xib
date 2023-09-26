@@ -63,6 +63,7 @@
             <connections>
                 <outlet property="imageViewCell" destination="9RT-Av-Akb" id="LKo-5y-113"/>
                 <outlet property="labelViewCell" destination="r2N-Gs-If5" id="eL5-gr-l6A"/>
+                <outlet property="rotationImage" destination="G7F-73-ppA" id="nmj-du-dam"/>
             </connections>
             <point key="canvasLocation" x="179.38931297709922" y="22.887323943661972"/>
         </tableViewCell>

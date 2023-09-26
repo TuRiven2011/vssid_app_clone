@@ -39,6 +39,11 @@ extension SearchViewController: UICollectionViewDataSource, UICollectionViewDele
         return CGSize(width: searchColectionView.frame.width/2, height: searchColectionView.frame.width/2)
     }
     
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if indexPath.row == 2 {
+            let vc = SearchPlaceViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
     
 }

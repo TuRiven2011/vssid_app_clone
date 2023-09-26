@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AnswerViewController" customModule="vssid_app_clone" customModuleProvider="target">
+            <connections>
+                <outlet property="answerLbl" destination="1ax-ha-bpW" id="aVI-9L-oWT"/>
+                <outlet property="questionLbl" destination="xPG-Lf-us3" id="eBT-oK-pi3"/>
+                <outlet property="questionLbl2" destination="Z8y-qd-OWV" id="Oxa-ho-a3a"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cauhoi1" translatesAutoresizingMaskIntoConstraints="NO" id="VRt-Wa-87b">
+                    <rect key="frame" x="20" y="79" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Izw-vU-eMR"/>
+                        <constraint firstAttribute="width" constant="40" id="Ry6-zs-x5K"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPG-Lf-us3">
+                    <rect key="frame" x="80" y="79" width="273" height="20.333333333333329"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.16862745098039217" green="0.396078431372549" blue="0.67450980392156867" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Câu hỏi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khs-et-wQT">
+                    <rect key="frame" x="20" y="139" width="64.333333333333329" height="21.666666666666657"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <color key="textColor" red="0.16862745098039217" green="0.396078431372549" blue="0.67450980392156867" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8y-qd-OWV">
+                    <rect key="frame" x="20" y="180.66666666666666" width="353" height="20.333333333333343"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Câu trả lời" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dtj-lm-ZJv">
+                    <rect key="frame" x="20" y="250.99999999999997" width="87" height="21.666666666666657"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <color key="textColor" red="0.16862745100000001" green="0.39607843139999999" blue="0.67450980390000004" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ax-ha-bpW">
+                    <rect key="frame" x="20" y="292.66666666666669" width="353" height="20.333333333333314"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xPG-Lf-us3" secondAttribute="trailing" constant="40" id="6TD-lo-xFQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Z8y-qd-OWV" secondAttribute="trailing" constant="20" id="6bC-FU-C8z"/>
+                <constraint firstItem="1ax-ha-bpW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="AMb-zq-LFs"/>
+                <constraint firstItem="xPG-Lf-us3" firstAttribute="leading" secondItem="VRt-Wa-87b" secondAttribute="trailing" constant="20" id="CNN-5d-RnH"/>
+                <constraint firstItem="khs-et-wQT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="GC4-qx-2xe"/>
+                <constraint firstItem="VRt-Wa-87b" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="NpC-ew-jdq"/>
+                <constraint firstItem="VRt-Wa-87b" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="Ufl-1L-kK0"/>
+                <constraint firstItem="Z8y-qd-OWV" firstAttribute="top" secondItem="khs-et-wQT" secondAttribute="bottom" constant="20" id="Vxn-41-1bQ"/>
+                <constraint firstItem="dtj-lm-ZJv" firstAttribute="top" secondItem="Z8y-qd-OWV" secondAttribute="bottom" constant="50" id="c62-iF-b4p"/>
+                <constraint firstItem="dtj-lm-ZJv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="o68-Nk-9bE"/>
+                <constraint firstItem="khs-et-wQT" firstAttribute="top" secondItem="VRt-Wa-87b" secondAttribute="bottom" constant="20" id="oad-td-RgQ"/>
+                <constraint firstItem="Z8y-qd-OWV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="qdd-2f-BZd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1ax-ha-bpW" secondAttribute="trailing" constant="20" id="rt2-ct-Izs"/>
+                <constraint firstItem="xPG-Lf-us3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="uc3-E0-5Hx"/>
+                <constraint firstItem="1ax-ha-bpW" firstAttribute="top" secondItem="dtj-lm-ZJv" secondAttribute="bottom" constant="20" id="uhB-8e-wZt"/>
+            </constraints>
+            <point key="canvasLocation" x="42" y="-12"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cauhoi1" width="79" height="79"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
