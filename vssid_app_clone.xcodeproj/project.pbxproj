@@ -10,6 +10,8 @@
 		4784B9C42AC1DD43003A2C07 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4784B9C32AC1DD43003A2C07 /* SideMenuViewController.swift */; };
 		4784B9C62AC1DD4E003A2C07 /* SideMenuViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4784B9C52AC1DD4E003A2C07 /* SideMenuViewController.storyboard */; };
 		4784B9C82AC1DE3D003A2C07 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4784B9C72AC1DE3D003A2C07 /* UIViewControllerExtension.swift */; };
+		4784B9CA2AC30A00003A2C07 /* AppNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4784B9C92AC30A00003A2C07 /* AppNavigator.swift */; };
+		4784B9CC2AC30C39003A2C07 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4784B9CB2AC30C39003A2C07 /* Constant.swift */; };
 		47D377F22AC07DAC008759D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D377F12AC07DAC008759D4 /* AppDelegate.swift */; };
 		47D377F62AC07DAC008759D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D377F52AC07DAC008759D4 /* ViewController.swift */; };
 		47D377F92AC07DAC008759D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47D377F72AC07DAC008759D4 /* Main.storyboard */; };
@@ -53,6 +55,8 @@
 		4784B9C32AC1DD43003A2C07 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		4784B9C52AC1DD4E003A2C07 /* SideMenuViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SideMenuViewController.storyboard; sourceTree = "<group>"; };
 		4784B9C72AC1DE3D003A2C07 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		4784B9C92AC30A00003A2C07 /* AppNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigator.swift; sourceTree = "<group>"; };
+		4784B9CB2AC30C39003A2C07 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		47D377EE2AC07DAC008759D4 /* vssid_app_clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vssid_app_clone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47D377F12AC07DAC008759D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47D377F52AC07DAC008759D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +158,7 @@
 				47D378192AC07E52008759D4 /* View */,
 				47D378092AC07E51008759D4 /* ViewController */,
 				47D377F12AC07DAC008759D4 /* AppDelegate.swift */,
+				4784B9C92AC30A00003A2C07 /* AppNavigator.swift */,
 				47D377F52AC07DAC008759D4 /* ViewController.swift */,
 				47D377F72AC07DAC008759D4 /* Main.storyboard */,
 				47D377FA2AC07DAD008759D4 /* Assets.xcassets */,
@@ -249,6 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				47D378182AC07E52008759D4 /* CommonEnum.swift */,
+				4784B9CB2AC30C39003A2C07 /* Constant.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -505,6 +511,7 @@
 			files = (
 				822E18A62AC1E8EA00C35308 /* InsuranceProgressCollectionViewCell.swift in Sources */,
 				822E187A2AC09C1E00C35308 /* ServiceEntity.swift in Sources */,
+				4784B9CA2AC30A00003A2C07 /* AppNavigator.swift in Sources */,
 				822E18832AC122B300C35308 /* InforTableViewCell.swift in Sources */,
 				822E18A12AC1E60700C35308 /* InsuranceProgessViewController.swift in Sources */,
 				47D3781B2AC07E52008759D4 /* TabbarViewController.swift in Sources */,
@@ -513,6 +520,7 @@
 				822E18882AC1333700C35308 /* ServiceViewController.swift in Sources */,
 				4784B9C82AC1DE3D003A2C07 /* UIViewControllerExtension.swift in Sources */,
 				47D3781E2AC07E52008759D4 /* HelpViewController.swift in Sources */,
+				4784B9CC2AC30C39003A2C07 /* Constant.swift in Sources */,
 				825F40422AC0874E00546E60 /* SearchViewController.swift in Sources */,
 				822E188D2AC137C000C35308 /* ServiceTableViewCell.swift in Sources */,
 				822E187E2AC11BEE00C35308 /* InforViewController.swift in Sources */,
