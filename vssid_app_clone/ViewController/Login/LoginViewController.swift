@@ -9,6 +9,17 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var logInButton: UIButton!
+    
+    
+    
+    
+    @IBAction func handleLogin(_ sender: Any) {
+        APP_DELEGATE?.appNavigator?.switchToMain()
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

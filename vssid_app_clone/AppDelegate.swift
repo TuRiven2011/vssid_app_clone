@@ -11,6 +11,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var appNavigator: AppNavigator?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -19,20 +20,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         guard let window = window else {return false}
         
-//        let tabbarController = TabbarViewController()
-        let tabbarController = LoginViewController()
+        appNavigator = .init(window: window)
         
-        let navigationController = UINavigationController(rootViewController: tabbarController)
-        
-        window.rootViewController = tabbarController
-        window.makeKeyAndVisible()
-        
-//        window.
-//        UIView.transition(with: window, duration: 0.3, options: [.transitionCrossDissolve],
-//                          animations: {}, completion: {completed in
-//        })
+        appNavigator?.swichToLogin()
         
         return true
     }
 
 }
+
+
