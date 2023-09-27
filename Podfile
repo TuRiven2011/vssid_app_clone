@@ -6,6 +6,7 @@ target 'vssid_app_clone' do
   use_frameworks!
   
   pod "ESTabBarController-swift"
+  pod 'SideMenu'
   # Pods for clone_vssid
   post_install do |installer|
       installer.generated_projects.each do |project|

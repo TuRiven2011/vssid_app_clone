@@ -155,6 +155,58 @@ enum UseCardEnum {
     
 }
 
+enum SideMenuEnum: CaseIterable {
+    case notification, news, personal, service, search, help, setting, changePassword, logOut
+    
+    var title: String {
+        switch(self) {
+            
+        case .notification:
+            return "Thông báo"
+        case .news:
+            return "Tin tức"
+        case .personal:
+            return "Quản lý cá nhân"
+        case .service:
+            return "Dịch vụ công"
+        case .search:
+            return "Tra cứu"
+        case .help:
+            return "Trợ giúp"
+        case .setting:
+            return "Cài đặt"
+        case .changePassword:
+            return "Đổi mật khẩu"
+        case .logOut:
+            return "Đăng xuất"
+        }
+    }
+    
+    var image: UIImage {
+        switch(self) {
+            
+        case .notification:
+            return .init(named: "new_menu_thongbao") ?? .init()
+        case .news:
+            return .init(named: "new_menu_tintuc") ?? .init()
+        case .personal:
+            return .init(named: "new_menu_canhan") ?? .init()
+        case .service:
+            return .init(named: "dichvucongTab") ?? .init()
+        case .search:
+            return .init(named: "new_menu_tracuu") ?? .init()
+        case .help:
+            return .init(named: "new_menu_hotro") ?? .init()
+        case .setting:
+            return .init(named: "new_menu_caidat") ?? .init()
+        case .changePassword:
+            return .init(named: "new_menu_thongbao") ?? .init()
+        case .logOut:
+            return .init(named: "new_menu_dangxuat") ?? .init()
+        }
+    }
+}
+
 
 
 

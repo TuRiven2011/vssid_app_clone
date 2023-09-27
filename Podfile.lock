@@ -1,16 +1,20 @@
 PODS:
   - ESTabBarController-swift (2.8.0)
+  - SideMenu (6.5.0)
 
 DEPENDENCIES:
   - ESTabBarController-swift
+  - SideMenu
 
 SPEC REPOS:
   trunk:
     - ESTabBarController-swift
+    - SideMenu
 
 SPEC CHECKSUMS:
   ESTabBarController-swift: 05593a6ad64700b03c0eb60ff625916370aa4136
+  SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
 
-PODFILE CHECKSUM: 55a6f39633d79ce9ca44ff230148aedbe8ea5bc0
+PODFILE CHECKSUM: 2f720c9808537308082315a0699b93739835a348
 
 COCOAPODS: 1.12.0

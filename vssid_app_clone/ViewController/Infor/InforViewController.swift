@@ -34,18 +34,88 @@ class InforViewController: UIViewController {
     ]
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        setupNavigationBar(title: "Quản lý cá nhân".uppercased())
         configTableView()
         binding()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.isNavigationBarHidden = false
+        navigationController?.navigationBar.isHidden = false
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.isNavigationBarHidden = true
+        navigationController?.navigationBar.isHidden = true
+        
+    }
+    
+    private func setupNavigationBar(title: String) {
+        
+        navigationItem.title = title
+        if #available(iOS 13.0, *) {
+            let appearance = UINavigationBarAppearance()
+            appearance.configureWithDefaultBackground()
+            appearance.backgroundColor = UIColor(rgb: 0xFF2B65AC)
+            appearance.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+            appearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+
+            navigationController?.navigationBar.standardAppearance = appearance
+            navigationController?.navigationBar.scrollEdgeAppearance = appearance
+            navigationController?.navigationBar.compactAppearance = appearance
+
+        } else {
+            self.navigationController?.navigationBar.tintColor = .white
+            self.navigationController?.navigationBar.barTintColor = UIColor(rgb: 0xFF2B65AC)
+            self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+            self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        }
+        
+        let menu = UIImageView(image: .init(named: "menu"))
+        menu.isUserInteractionEnabled = true
+        menu.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(showSideBar)))
+        
+        menu.translatesAutoresizingMaskIntoConstraints = false
+        navigationController?.navigationBar.addSubview(menu)
+        
+        if let navigationBar = navigationController?.navigationBar {
+            [
+                menu.widthAnchor.constraint(equalToConstant: 26),
+                menu.heightAnchor.constraint(equalToConstant: 26),
+                menu.leadingAnchor.constraint(equalTo: navigationBar.leadingAnchor, constant: 20),
+                menu.bottomAnchor.constraint(equalTo: navigationBar.bottomAnchor, constant: -10),
+            ].forEach({$0.isActive = true})
+        }
+        
+        let notification = UIImageView(image: .init(named: "tb3"))
+        notification.isUserInteractionEnabled = true
+        notification.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(gotoNotificationVC)))
+        
+        notification.translatesAutoresizingMaskIntoConstraints = false
+        navigationController?.navigationBar.addSubview(notification)
+        
+        if let navigationBar = navigationController?.navigationBar {
+            [
+                notification.widthAnchor.constraint(equalToConstant: 26),
+                notification.heightAnchor.constraint(equalToConstant: 26),
+                notification.trailingAnchor.constraint(equalTo: navigationBar.trailingAnchor, constant: -20),
+                notification.bottomAnchor.constraint(equalTo: navigationBar.bottomAnchor, constant: -10),
+            ].forEach({$0.isActive = true})
+        }
+
+    }
   
-    func configTableView() {
+    private func configTableView() {
         inforTableView.register(.init(nibName: "InforTableViewCell", bundle: nil), forCellReuseIdentifier: "InforTableViewCell")
         inforTableView.delegate = self
         inforTableView.dataSource = self
     }
     
-    func binding() {
-        
+    private func binding() {
         profileImage.image = UIImage(named: listData[0].infor)
         nameLbl.text = listData[1].infor
         insuranceIdLbl.text = listData[2].infor
@@ -56,6 +126,17 @@ class InforViewController: UIViewController {
     }
   
 
+}
+
+extension InforViewController {
+    @objc func showSideBar() {
+        NotificationCenter.default.post(name: .SHOW_SIDE_MENU, object: nil)
+    }
+    
+    @objc func gotoNotificationVC() {
+        let vc = NotificationViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 extension InforViewController: UITableViewDelegate, UITableViewDataSource {

@@ -20,21 +20,21 @@ class NotificationViewController: UIViewController {
 
     func configTableView() {
         notiTableView.register(.init(nibName: "NotiTableViewCell", bundle: nil), forCellReuseIdentifier: "NotiTableViewCell")
-        notiTableView.delegate = self
-        notiTableView.dataSource = self
+//        notiTableView.delegate = self
+//        notiTableView.dataSource = self
         
     }
 
 }
 
-extension NotificationViewController: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
-    }
+//extension NotificationViewController: UITableViewDelegate, UITableViewDataSource {
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//
+//    }
+//
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//
+//    }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
-    }
     
-    
-}
+//}

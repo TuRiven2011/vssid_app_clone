@@ -2,28 +2,89 @@
 //  SideMenuViewController.swift
 //  vssid_app_clone
 //
-//  Created by Phạm Bá Tú on 25/09/2023.
+//  Created by Phạm Bá Tú on 28/09/2023.
 //
 
 import UIKit
 
-class SideMenuViewController: UISplitViewController {
-
+class SideMenuViewController: UIViewController {
+    
+    @IBOutlet weak var menuTableView: UITableView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var vssIDLabel: UILabel!
+    
+    let section1: [SideMenuEnum] = SideMenuEnum.allCases.filter({$0.title != "Đổi mật khẩu" && $0.title != "Đăng xuất"})
+    let section2: [SideMenuEnum] = [
+        .changePassword,
+        .logOut
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        configUI()
+        configTableView()
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func configUI() {
+        let gradient = CAGradientLayer()
+        
+        gradient.frame = view.bounds
+        gradient.colors = [UIColor(rgb: 0xFF3070C0).cgColor, UIColor(rgb: 0xFF4DABE9).cgColor]
+        
+        self.view.layer.insertSublayer(gradient, at: 0)
     }
-    */
+    
+    private func configTableView() {
+        
+        menuTableView.register(.init(nibName: "ItemSideMenuTableViewCell",
+                                     bundle: nil), forCellReuseIdentifier: "ItemSideMenuTableViewCell")
+        menuTableView.delegate = self
+        menuTableView.dataSource = self
+    }
+    
+}
 
+extension SideMenuViewController: UITableViewDataSource, UITableViewDelegate {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if(section == 0) {
+            return section1.count
+        } else {
+            return section2.count
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ItemSideMenuTableViewCell", for: indexPath) as? ItemSideMenuTableViewCell else {return .init()}
+        cell.selectionStyle = .none
+        indexPath.section == 0 ? cell.binding(data: section1[indexPath.row]) : cell.binding(data: section2[indexPath.row])
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section == 0 {
+//            switch section1[indexPath.row] {
+//
+//            }
+        } else {
+            switch section2[indexPath.row] {
+            case .changePassword:
+                let vc = ChangePasswordViewController()
+                navigationController?.pushViewController(vc, animated: true)
+            case .logOut:
+                APP_DELEGATE?.appNavigator?.swichToLogin()
+            default:
+                break
+            }
+        }
+    }
 }
