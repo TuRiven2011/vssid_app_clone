@@ -4,7 +4,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,6 +11,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchPlaceViewController" customModule="vssid_app_clone" customModuleProvider="target">
             <connections>
+                <outlet property="chooseDistrictView" destination="7q9-aA-tSS" id="lZB-OJ-2MF"/>
+                <outlet property="chooseProvinceView" destination="wbN-vc-IuK" id="TJf-Wx-oes"/>
+                <outlet property="containtPickerView" destination="p61-HK-9xl" id="Tsa-Fi-hLM"/>
+                <outlet property="districtLbl" destination="n2s-0T-GcG" id="JZe-hx-z5D"/>
+                <outlet property="doneView" destination="Vuy-6b-zgf" id="KoP-0H-Clv"/>
+                <outlet property="pickerView" destination="ZMG-Sc-ZHa" id="irF-7H-Yz6"/>
+                <outlet property="provinceLbl" destination="3Do-Pv-kLi" id="P8u-aO-KRT"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -134,6 +140,22 @@
                                         <constraint firstAttribute="height" constant="1" id="xIR-1f-Qba"/>
                                     </constraints>
                                 </view>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="up-arrow" translatesAutoresizingMaskIntoConstraints="NO" id="BFe-e9-BY2">
+                                    <rect key="frame" x="20" y="15" width="23" height="20"/>
+                                    <color key="tintColor" systemColor="systemGray2Color"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="23" id="4IV-6X-r82"/>
+                                        <constraint firstAttribute="height" constant="20" id="yTQ-8D-Q29"/>
+                                    </constraints>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="down-arrow" translatesAutoresizingMaskIntoConstraints="NO" id="5Oz-Ht-rb6">
+                                    <rect key="frame" x="63" y="15" width="20" height="20"/>
+                                    <color key="tintColor" systemColor="systemGray2Color"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="GOr-Rg-Mml"/>
+                                        <constraint firstAttribute="width" constant="20" id="gLt-bN-T13"/>
+                                    </constraints>
+                                </imageView>
                                 <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Done" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vuy-6b-zgf">
                                     <rect key="frame" x="333.66666666666669" y="13" width="49.333333333333314" height="24"/>
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
@@ -143,11 +165,15 @@
                             </subviews>
                             <color key="backgroundColor" systemColor="systemGray6Color"/>
                             <constraints>
+                                <constraint firstItem="5Oz-Ht-rb6" firstAttribute="centerY" secondItem="E1l-ta-2du" secondAttribute="centerY" id="0Gp-oW-pG8"/>
                                 <constraint firstItem="KIF-d6-hti" firstAttribute="leading" secondItem="E1l-ta-2du" secondAttribute="leading" id="28k-4W-naK"/>
                                 <constraint firstItem="Vuy-6b-zgf" firstAttribute="centerY" secondItem="E1l-ta-2du" secondAttribute="centerY" id="Lwl-fU-TiA"/>
                                 <constraint firstItem="KIF-d6-hti" firstAttribute="top" secondItem="E1l-ta-2du" secondAttribute="top" id="YFm-dr-4r7"/>
+                                <constraint firstItem="BFe-e9-BY2" firstAttribute="centerY" secondItem="E1l-ta-2du" secondAttribute="centerY" id="cPq-Ql-UZA"/>
+                                <constraint firstItem="5Oz-Ht-rb6" firstAttribute="leading" secondItem="BFe-e9-BY2" secondAttribute="trailing" constant="20" id="f48-Og-N38"/>
                                 <constraint firstAttribute="trailing" secondItem="KIF-d6-hti" secondAttribute="trailing" id="gey-EC-WwU"/>
                                 <constraint firstAttribute="trailing" secondItem="Vuy-6b-zgf" secondAttribute="trailing" constant="10" id="m1d-OV-taa"/>
+                                <constraint firstItem="BFe-e9-BY2" firstAttribute="leading" secondItem="E1l-ta-2du" secondAttribute="leading" constant="20" id="peK-cH-Vk3"/>
                             </constraints>
                         </view>
                     </subviews>
@@ -204,11 +230,16 @@
         </view>
     </objects>
     <resources>
+        <image name="down-arrow" width="512" height="512"/>
+        <image name="up-arrow" width="512" height="512"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

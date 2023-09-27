@@ -63,6 +63,10 @@
 		82EB8B632AC359D900ADB2D4 /* CommonQuestionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82EB8B612AC359D900ADB2D4 /* CommonQuestionTableViewCell.xib */; };
 		82EB8B672AC35D1000ADB2D4 /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EB8B652AC35D1000ADB2D4 /* AnswerViewController.swift */; };
 		82EB8B682AC35D1000ADB2D4 /* AnswerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82EB8B662AC35D1000ADB2D4 /* AnswerViewController.xib */; };
+		82EB8B6C2AC46F8900ADB2D4 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EB8B6A2AC46F8900ADB2D4 /* NotificationViewController.swift */; };
+		82EB8B6D2AC46F8900ADB2D4 /* NotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82EB8B6B2AC46F8900ADB2D4 /* NotificationViewController.xib */; };
+		82EB8B712AC4720000ADB2D4 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EB8B6F2AC4720000ADB2D4 /* NotificationTableViewCell.swift */; };
+		82EB8B722AC4720000ADB2D4 /* NotificationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82EB8B702AC4720000ADB2D4 /* NotificationTableViewCell.xib */; };
 		E5C7D969B6F67CA5B666C024 /* Pods_vssid_app_clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39F5399B48EAF98F34A80C6 /* Pods_vssid_app_clone.framework */; };
 /* End PBXBuildFile section */
 
@@ -126,6 +130,10 @@
 		82EB8B612AC359D900ADB2D4 /* CommonQuestionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonQuestionTableViewCell.xib; sourceTree = "<group>"; };
 		82EB8B652AC35D1000ADB2D4 /* AnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerViewController.swift; sourceTree = "<group>"; };
 		82EB8B662AC35D1000ADB2D4 /* AnswerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnswerViewController.xib; sourceTree = "<group>"; };
+		82EB8B6A2AC46F8900ADB2D4 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		82EB8B6B2AC46F8900ADB2D4 /* NotificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationViewController.xib; sourceTree = "<group>"; };
+		82EB8B6F2AC4720000ADB2D4 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
+		82EB8B702AC4720000ADB2D4 /* NotificationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationTableViewCell.xib; sourceTree = "<group>"; };
 		AA584329380BAF88C692F388 /* Pods-vssid_app_clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vssid_app_clone.release.xcconfig"; path = "Target Support Files/Pods-vssid_app_clone/Pods-vssid_app_clone.release.xcconfig"; sourceTree = "<group>"; };
 		B39F5399B48EAF98F34A80C6 /* Pods_vssid_app_clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vssid_app_clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -225,6 +233,7 @@
 		47D378092AC07E51008759D4 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				82EB8B692AC46F7300ADB2D4 /* Notification */,
 				82057F952AC350E9001AFE14 /* CommonQuestion */,
 				82057F8B2AC3321E001AFE14 /* SearchPlaces */,
 				82057F862AC314F0001AFE14 /* TreatmentBook */,
@@ -481,6 +490,25 @@
 			path = Answer;
 			sourceTree = "<group>";
 		};
+		82EB8B692AC46F7300ADB2D4 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				82EB8B6A2AC46F8900ADB2D4 /* NotificationViewController.swift */,
+				82EB8B6B2AC46F8900ADB2D4 /* NotificationViewController.xib */,
+				82EB8B6E2AC471D900ADB2D4 /* NotificationCell */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		82EB8B6E2AC471D900ADB2D4 /* NotificationCell */ = {
+			isa = PBXGroup;
+			children = (
+				82EB8B6F2AC4720000ADB2D4 /* NotificationTableViewCell.swift */,
+				82EB8B702AC4720000ADB2D4 /* NotificationTableViewCell.xib */,
+			);
+			path = NotificationCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -561,6 +589,8 @@
 				822E188E2AC137C000C35308 /* ServiceTableViewCell.xib in Resources */,
 				822E18932AC1B4DD00C35308 /* InsuranceInforViewController.xib in Resources */,
 				822E18A72AC1E8EA00C35308 /* InsuranceProgressCollectionViewCell.xib in Resources */,
+				82EB8B722AC4720000ADB2D4 /* NotificationTableViewCell.xib in Resources */,
+				82EB8B6D2AC46F8900ADB2D4 /* NotificationViewController.xib in Resources */,
 				822E187F2AC11BEE00C35308 /* InforViewController.xib in Resources */,
 				47D378202AC07E52008759D4 /* HelpTableViewCell.xib in Resources */,
 				82057F852AC3090D001AFE14 /* ChangePasswordViewController.xib in Resources */,
@@ -640,6 +670,8 @@
 				825F40442AC08B7F00546E60 /* SearchCollectionViewCell.swift in Sources */,
 				822E18922AC1B4DD00C35308 /* InsuranceInforViewController.swift in Sources */,
 				822E18972AC1C12900C35308 /* UseCardViewController.swift in Sources */,
+				82EB8B6C2AC46F8900ADB2D4 /* NotificationViewController.swift in Sources */,
+				82EB8B712AC4720000ADB2D4 /* NotificationTableViewCell.swift in Sources */,
 				47D378212AC07E52008759D4 /* HelpTableViewCell.swift in Sources */,
 				47D3781A2AC07E52008759D4 /* UIViewExtension.swift in Sources */,
 				47D377F62AC07DAC008759D4 /* ViewController.swift in Sources */,
