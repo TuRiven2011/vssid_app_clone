@@ -12,6 +12,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var logInButton: UIButton!
     @IBOutlet weak var inviteInstallAppLabel: UILabel!
     
+    @IBOutlet weak var registerLblView: UILabel!
+    
     @IBAction func handleLogin(_ sender: Any) {
         APP_DELEGATE?.appNavigator?.switchToMain()
     }
@@ -25,8 +27,14 @@ class LoginViewController: UIViewController {
         navigationController?.isNavigationBarHidden = true
         
         configControlEvent()
+        registerLblView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapRegister(_:))))
         
         // Do any additional setup after loading the view.
+    }
+    
+    @objc func didTapRegister(_ gesture: UITapGestureRecognizer) {
+        let vc = RegisterViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     private func configControlEvent() {

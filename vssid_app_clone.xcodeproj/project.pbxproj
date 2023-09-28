@@ -67,6 +67,8 @@
 		82EB8B6D2AC46F8900ADB2D4 /* NotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82EB8B6B2AC46F8900ADB2D4 /* NotificationViewController.xib */; };
 		82EB8B712AC4720000ADB2D4 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EB8B6F2AC4720000ADB2D4 /* NotificationTableViewCell.swift */; };
 		82EB8B722AC4720000ADB2D4 /* NotificationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82EB8B702AC4720000ADB2D4 /* NotificationTableViewCell.xib */; };
+		82EB8B762AC5C89300ADB2D4 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EB8B742AC5C89300ADB2D4 /* RegisterViewController.swift */; };
+		82EB8B772AC5C89300ADB2D4 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82EB8B752AC5C89300ADB2D4 /* RegisterViewController.xib */; };
 		E5C7D969B6F67CA5B666C024 /* Pods_vssid_app_clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39F5399B48EAF98F34A80C6 /* Pods_vssid_app_clone.framework */; };
 /* End PBXBuildFile section */
 
@@ -134,6 +136,8 @@
 		82EB8B6B2AC46F8900ADB2D4 /* NotificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationViewController.xib; sourceTree = "<group>"; };
 		82EB8B6F2AC4720000ADB2D4 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
 		82EB8B702AC4720000ADB2D4 /* NotificationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationTableViewCell.xib; sourceTree = "<group>"; };
+		82EB8B742AC5C89300ADB2D4 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		82EB8B752AC5C89300ADB2D4 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		AA584329380BAF88C692F388 /* Pods-vssid_app_clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vssid_app_clone.release.xcconfig"; path = "Target Support Files/Pods-vssid_app_clone/Pods-vssid_app_clone.release.xcconfig"; sourceTree = "<group>"; };
 		B39F5399B48EAF98F34A80C6 /* Pods_vssid_app_clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vssid_app_clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -233,6 +237,7 @@
 		47D378092AC07E51008759D4 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				82EB8B732AC5C86800ADB2D4 /* RegisterView */,
 				82EB8B692AC46F7300ADB2D4 /* Notification */,
 				82057F952AC350E9001AFE14 /* CommonQuestion */,
 				82057F8B2AC3321E001AFE14 /* SearchPlaces */,
@@ -509,6 +514,15 @@
 			path = NotificationCell;
 			sourceTree = "<group>";
 		};
+		82EB8B732AC5C86800ADB2D4 /* RegisterView */ = {
+			isa = PBXGroup;
+			children = (
+				82EB8B742AC5C89300ADB2D4 /* RegisterViewController.swift */,
+				82EB8B752AC5C89300ADB2D4 /* RegisterViewController.xib */,
+			);
+			path = RegisterView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -574,6 +588,7 @@
 				822E18892AC1333700C35308 /* ServiceViewController.xib in Resources */,
 				4784B9C62AC1DD4E003A2C07 /* SideMenuViewController.storyboard in Resources */,
 				47D3781C2AC07E52008759D4 /* LoginViewController.xib in Resources */,
+				82EB8B772AC5C89300ADB2D4 /* RegisterViewController.xib in Resources */,
 				47D3781F2AC07E52008759D4 /* HelpViewController.xib in Resources */,
 				47D377FE2AC07DAD008759D4 /* LaunchScreen.storyboard in Resources */,
 				825F403F2AC0871500546E60 /* SearchViewController.storyboard in Resources */,
@@ -663,6 +678,7 @@
 				47D3781E2AC07E52008759D4 /* HelpViewController.swift in Sources */,
 				82057F892AC31514001AFE14 /* TreatmentViewController.swift in Sources */,
 				4784B9CC2AC30C39003A2C07 /* Constant.swift in Sources */,
+				82EB8B762AC5C89300ADB2D4 /* RegisterViewController.swift in Sources */,
 				825F40422AC0874E00546E60 /* SearchViewController.swift in Sources */,
 				82057F8E2AC33242001AFE14 /* SearchPlaceViewController.swift in Sources */,
 				822E188D2AC137C000C35308 /* ServiceTableViewCell.swift in Sources */,
