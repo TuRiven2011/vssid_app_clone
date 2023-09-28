@@ -22,19 +22,19 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="new_slide_hotro" translatesAutoresizingMaskIntoConstraints="NO" id="MX8-3z-TyR">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                    <rect key="frame" x="0.0" y="48" width="414" height="200"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="200" id="kJJ-vg-MVM"/>
                     </constraints>
                 </imageView>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="xzu-5B-wMc">
-                    <rect key="frame" x="0.0" y="200" width="414" height="662"/>
+                    <rect key="frame" x="0.0" y="248" width="414" height="614"/>
                 </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="MX8-3z-TyR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Gu8-af-Tkb"/>
+                <constraint firstItem="MX8-3z-TyR" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Gu8-af-Tkb"/>
                 <constraint firstItem="xzu-5B-wMc" firstAttribute="top" secondItem="MX8-3z-TyR" secondAttribute="bottom" id="NEh-SG-arP"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="xzu-5B-wMc" secondAttribute="bottom" id="PAP-0e-21L"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xzu-5B-wMc" secondAttribute="trailing" id="RIk-si-cqE"/>
