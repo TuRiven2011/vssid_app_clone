@@ -43,7 +43,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQG-yo-Usq">
-                                                    <rect key="frame" x="-11" y="90" width="150" height="19.333333333333329"/>
+                                                    <rect key="frame" x="-11" y="85" width="150" height="19.333333333333329"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="150" id="dYa-Wh-sKV"/>
                                                     </constraints>
@@ -57,7 +57,7 @@
                                                 <constraint firstItem="omJ-fT-1ga" firstAttribute="top" secondItem="DEW-ZV-xyo" secondAttribute="top" id="9mZ-14-Xxy"/>
                                                 <constraint firstItem="hQG-yo-Usq" firstAttribute="centerX" secondItem="DEW-ZV-xyo" secondAttribute="centerX" id="QFd-S5-8py"/>
                                                 <constraint firstItem="omJ-fT-1ga" firstAttribute="centerX" secondItem="DEW-ZV-xyo" secondAttribute="centerX" id="oRJ-61-7yN"/>
-                                                <constraint firstItem="hQG-yo-Usq" firstAttribute="top" secondItem="omJ-fT-1ga" secondAttribute="bottom" constant="20" id="ypU-6w-77I"/>
+                                                <constraint firstItem="hQG-yo-Usq" firstAttribute="top" secondItem="omJ-fT-1ga" secondAttribute="bottom" constant="15" id="ypU-6w-77I"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <connections>

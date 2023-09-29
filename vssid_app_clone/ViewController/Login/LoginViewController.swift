@@ -13,9 +13,30 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var inviteInstallAppLabel: UILabel!
     
     @IBOutlet weak var registerLblView: UILabel!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var vssidTextField: UITextField!
     
     @IBAction func handleLogin(_ sender: Any) {
-        APP_DELEGATE?.appNavigator?.switchToMain()
+        
+        if vssidTextField.text?.isEmpty == true || passwordTextField.text?.isEmpty == true {
+            
+            let vc = NotiViewController()
+            vc.text = "Vui lòng nhập đủ thông tin"
+            vc.modalTransitionStyle = .crossDissolve
+            vc.modalPresentationStyle = . overCurrentContext
+            
+            present(vc, animated: true)
+            
+        } else {
+            
+//            var loginInfor = LoginEntity()
+//            loginInfor.userName = vssidTextField.text
+//            loginInfor.password = passwordTextField.text
+//            
+//            AppData.loginInfor = loginInfor
+            
+            AppData.logIn()
+        }
     }
     
     
