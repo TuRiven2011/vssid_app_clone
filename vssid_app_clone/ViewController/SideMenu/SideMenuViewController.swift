@@ -79,9 +79,13 @@ extension SideMenuViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 0 {
-//            switch section1[indexPath.row] {
-//
-//            }
+            switch section1[indexPath.row] {
+            case .news:
+                let vc = NewsViewController()
+                navigationController?.pushViewController(vc, animated: true)
+            default:
+                break
+            }
         } else {
             switch section2[indexPath.row] {
             case .changePassword:

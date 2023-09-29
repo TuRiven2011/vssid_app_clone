@@ -84,6 +84,7 @@
                     <constraint firstAttribute="trailing" secondItem="qpd-yo-ozO" secondAttribute="trailing" constant="10" id="00x-Fg-jBO"/>
                     <constraint firstItem="D6C-bk-IaI" firstAttribute="top" secondItem="GgF-SM-a7b" secondAttribute="top" id="0NP-q5-dwF"/>
                     <constraint firstItem="jaA-pZ-ELr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="2Wg-VY-CSk"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="qpd-yo-ozO" secondAttribute="bottom" constant="20" id="3QO-CD-mI5"/>
                     <constraint firstItem="GgF-SM-a7b" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="4XQ-hG-tUa"/>
                     <constraint firstItem="jaA-pZ-ELr" firstAttribute="top" secondItem="1AS-gv-Ddl" secondAttribute="bottom" constant="10" id="BJc-f2-FZ2"/>
                     <constraint firstItem="D6C-bk-IaI" firstAttribute="leading" secondItem="GgF-SM-a7b" secondAttribute="trailing" constant="12" id="CL6-Th-RWD"/>
@@ -106,6 +107,17 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateChild1" destination="Bn5-s5-voA" id="SeP-co-MJh"/>
+                <outlet property="dateChild2" destination="qpd-yo-ozO" id="AuP-ed-GvZ"/>
+                <outlet property="image1" destination="1AS-gv-Ddl" id="754-fy-Hd2"/>
+                <outlet property="image2" destination="GgF-SM-a7b" id="8Lu-yN-eiy"/>
+                <outlet property="image3" destination="y9Y-Ch-eir" id="RgR-6A-tT1"/>
+                <outlet property="title1Label" destination="jaA-pZ-ELr" id="5Yd-UU-dFn"/>
+                <outlet property="title2Label" destination="D6C-bk-IaI" id="Yta-3s-a3d"/>
+                <outlet property="title3Label" destination="2Vy-KS-exz" id="N3B-qb-TOJ"/>
+                <outlet property="titleLabel" destination="Lad-HH-Bih" id="f3D-TT-eTz"/>
+            </connections>
             <point key="canvasLocation" x="238.93129770992365" y="291.90140845070425"/>
         </tableViewCell>
     </objects>
