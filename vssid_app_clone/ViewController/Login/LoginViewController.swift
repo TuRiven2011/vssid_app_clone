@@ -60,6 +60,8 @@ class LoginViewController: UIViewController {
     
     private func configControlEvent() {
         inviteInstallAppLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleInviteInstallApp)))
+        
+        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(endEdit)))
     }
     
     private func inviteInstallApp() {
@@ -79,5 +81,9 @@ class LoginViewController: UIViewController {
 extension LoginViewController {
     @objc func handleInviteInstallApp() {
         inviteInstallApp()
+    }
+    
+    @objc func endEdit() {
+        view.endEditing(true)
     }
 }
