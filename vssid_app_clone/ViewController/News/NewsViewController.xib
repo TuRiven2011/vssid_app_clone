@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewsViewController" customModule="vssid_app_clone" customModuleProvider="target">
             <connections>
+                <outlet property="backImage" destination="wfq-n9-NMc" id="BDN-TF-gVL"/>
                 <outlet property="newsTableView" destination="8FO-8j-1Vy" id="lMK-Hz-ojW"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -21,22 +22,53 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="8FO-8j-1Vy">
-                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <rect key="frame" x="0.0" y="80" width="414" height="782"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ggW-td-z8N">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIN TỨC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nPe-SA-Ah2">
+                            <rect key="frame" x="172" y="49" width="70" height="21"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.backward" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="wfq-n9-NMc">
+                            <rect key="frame" x="16" y="46.666666666666664" width="22" height="26.333333333333336"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="22" id="Gp7-pr-yYD"/>
+                                <constraint firstAttribute="height" constant="30" id="Rgr-U2-0fb"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.16862745098039217" green="0.396078431372549" blue="0.67450980392156867" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="nPe-SA-Ah2" secondAttribute="bottom" constant="10" id="2zn-kW-25I"/>
+                        <constraint firstItem="nPe-SA-Ah2" firstAttribute="centerX" secondItem="ggW-td-z8N" secondAttribute="centerX" id="5ua-Sc-Y9u"/>
+                        <constraint firstItem="wfq-n9-NMc" firstAttribute="centerY" secondItem="nPe-SA-Ah2" secondAttribute="centerY" id="6RF-48-Bdf"/>
+                        <constraint firstAttribute="height" constant="80" id="CH0-zL-oya"/>
+                        <constraint firstItem="wfq-n9-NMc" firstAttribute="leading" secondItem="ggW-td-z8N" secondAttribute="leading" constant="16" id="Dv3-rJ-mkA"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="8FO-8j-1Vy" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="2kl-4S-Ht8"/>
                 <constraint firstItem="8FO-8j-1Vy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="h06-Lt-7ly"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ggW-td-z8N" secondAttribute="trailing" id="kq6-JK-YGt"/>
+                <constraint firstItem="8FO-8j-1Vy" firstAttribute="top" secondItem="ggW-td-z8N" secondAttribute="bottom" id="mTG-qP-X6t"/>
+                <constraint firstItem="ggW-td-z8N" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="mqW-dr-vrv"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="8FO-8j-1Vy" secondAttribute="bottom" id="nHc-si-KgB"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8FO-8j-1Vy" secondAttribute="trailing" id="pg0-gI-UmR"/>
+                <constraint firstItem="ggW-td-z8N" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="yfx-CA-vGS"/>
             </constraints>
             <point key="canvasLocation" x="117" y="20"/>
         </view>
     </objects>
     <resources>
+        <image name="chevron.backward" catalog="system" width="97" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
