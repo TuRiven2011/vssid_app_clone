@@ -12,9 +12,12 @@ class RegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+      
     }
 
-
+    @IBAction func gotoCreatAccount(_ sender: Any) {
+        self.navigationController?.pushViewController(CreatAccountViewController(), animated: true)
+    }
+    
 
 }

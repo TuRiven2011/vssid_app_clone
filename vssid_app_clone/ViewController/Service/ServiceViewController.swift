@@ -9,28 +9,43 @@ import UIKit
 
 class ServiceViewController: UIViewController {
 
-    @IBOutlet weak var serviceTableView: UITableView!
+    @IBOutlet weak var topView: UIView!
     
     @IBOutlet weak var serviceView: UIView!
     
     @IBOutlet weak var historyView: UIView!
     
-    let listData: [ServiceEntity] = [
-        .init(title: "[612A] CẤP LẠI THẺ BHYT DO HỎNG, MẤT", content: "Cấp lại thẻ BHYT do hỏng, mất không thay đổi thông tin"),
-        .init(title: "[635] CHUYỂN ĐỊA BÀN HƯỞNG LƯƠNG HƯU, TRỢ CẤP BHXH", content: "Giải quyết chuyển hưởng sang địa bàn khác đối với người đang hưởng lương hưu, trợ cấp BHXH hàng tháng và người chờ hưởng lương hưu, trợ cấp hàng tháng"),
-        .init(title: "[639] THAY ĐỔI HÌNH THỨC LĨNH HOẶC THÔNG TIN NGƯỜI HƯỞNG CHẾ ĐỘ BHXH", content: "Người hưởng lĩnh chế độ BHXH bằng tiền mặt chuyển sang lĩnh bằng tài khoản cá nhân và ngược lại, hoặc thay đổi thông tin người hưởng"),
-        .init(title: "ĐĂNG KÝ TÀI KHOẢN CHO CON", content: "Đăng ký tài khoản giao dịch điện tử cho con"),
-        .init(title: "[607A] CẤP LẠI SỔ BHXH KHÔNG THAY ĐỔI THÔNG TIN", content: "Cấp lại sổ BHXH không thay đổi thông tin"),
-        .init(title: "[608A] CẤP LẠI SỔ BHXH DO THAY ĐỔI THÔNG TIN", content: "Cấp lại sổ Bảo hiểm xã hội do thay đổi thông tin"),
-        .init(title: "[652] UỶ QUYỀN LĨNH THAY CÁC CHẾ ĐỘ BHXH, TRỢ CÂP THẤT NGHIỆP", content: "Uỷ quyền lĩnh thay các chế độ BHXH, trợ cấp thất nghiệp")
-    ]
+    @IBOutlet weak var containPagevc: UIView!
+    
+    
+    var pageVC = UIPageViewController()
+    var vcs : [UIViewController] = []
+    var currentIndex = 0
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupNavigationBar(title: "DỊCH VỤ CÔNG")
         serviceView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapChange(_:))))
         historyView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapChange(_:))))
-        configTableView()
+        let vc1 = ListNotiViewController()
+        let vc2 = ListNotiViewController()
+        vcs.append(vc1)
+        vcs.append(vc2)
+        setupPageController()
+        
+    }
+    
+    private func setupPageController() {
+        self.pageVC = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
+        self.pageVC.dataSource = self
+        self.pageVC.delegate = self
+        self.pageVC.view.backgroundColor = .clear
+        self.pageVC.view.frame = containPagevc.frame
+        self.pageVC.setViewControllers([vcs[0]], direction: .forward, animated: false)
+        self.addChild(self.pageVC)
+        self.view.addSubview(self.pageVC.view)
+        self.pageVC.didMove(toParent: self)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -86,22 +101,50 @@ class ServiceViewController: UIViewController {
         
     }
 
-    func configTableView(){
-        serviceTableView.register(.init(nibName: "ServiceTableViewCell", bundle: nil), forCellReuseIdentifier: "ServiceTableViewCell")
-        serviceTableView.delegate = self
-        serviceTableView.dataSource = self
-        
-        serviceTableView.estimatedRowHeight = 60
-        serviceTableView.rowHeight = UITableView.automaticDimension
-    }
     
     @objc func didTapChange(_ gesture: UITapGestureRecognizer) {
         guard let target = gesture.view else {return}
         if target == serviceView {
-            
+            check(serviceView)
         } else {
-            
+            check(historyView)
         }
+    }
+    
+    func check(_ view: UIView) {
+        if view == serviceView {
+            for sub in serviceView.subviews {
+                if let sub = sub as? UILabel {
+                    sub.textColor = .blue
+                } else {
+                    sub.tintColor = .blue
+                }
+            }
+            for sub in historyView.subviews {
+                if let sub = sub as? UILabel {
+                    sub.textColor = .gray
+                } else {
+                    sub.tintColor = .gray
+                }
+            }
+
+        } else {
+            for sub in serviceView.subviews {
+                if let sub = sub as? UILabel {
+                    sub.textColor = .gray
+                } else {
+                    sub.tintColor = .gray
+                }
+            }
+            for sub in historyView.subviews {
+                if let sub = sub as? UILabel {
+                    sub.textColor = .blue
+                } else {
+                    sub.tintColor = .blue
+                }
+            }
+        }
+        
     }
  
 }
@@ -117,18 +160,35 @@ extension ServiceViewController {
     }
 }
 
-extension ServiceViewController: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        listData.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ServiceTableViewCell") as? ServiceTableViewCell else {return UITableViewCell()}
-        cell.binding(data: listData[indexPath.row])
+extension ServiceViewController: UIPageViewControllerDelegate, UIPageViewControllerDataSource {
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+        print("before")
+        if currentIndex == 0 {
+            return nil
+        }
+        currentIndex -= 1
+        check(historyView)
+        return vcs [currentIndex]
         
-        return cell
     }
     
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
+        print("after")
+        if currentIndex == 1 {
+            return nil
+        }
+        currentIndex += 1
+        check(serviceView)
+        return vcs [currentIndex]
+        
+    }
     
+    func presentationCount(for pageViewController: UIPageViewController) -> Int {
+        return 1
+    }
+    
+    func presentationIndex(for pageViewController: UIPageViewController) -> Int {
+        currentIndex
+    }
     
 }

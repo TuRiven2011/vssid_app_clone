@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,9 +11,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ServiceViewController" customModule="vssid_app_clone" customModuleProvider="target">
             <connections>
+                <outlet property="containPagevc" destination="7K3-gY-SSW" id="jfT-nb-qeM"/>
                 <outlet property="historyView" destination="GDp-th-4W2" id="AtV-Br-dSN"/>
-                <outlet property="serviceTableView" destination="2fi-Jq-GWZ" id="Q27-ca-Kae"/>
                 <outlet property="serviceView" destination="TAF-Tr-PDl" id="pKh-Lp-bmA"/>
+                <outlet property="topView" destination="hpa-qR-dj9" id="AbQ-1g-KQ6"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -100,20 +101,20 @@
                         <constraint firstAttribute="bottom" secondItem="hxb-I6-wtK" secondAttribute="bottom" id="yeL-KC-e2V"/>
                     </constraints>
                 </view>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="2fi-Jq-GWZ">
-                    <rect key="frame" x="0.0" y="159" width="393" height="659"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7K3-gY-SSW">
+                    <rect key="frame" x="0.0" y="209" width="393" height="609"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                </tableView>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="7K3-gY-SSW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="7S7-e5-Ufv"/>
+                <constraint firstItem="7K3-gY-SSW" firstAttribute="top" secondItem="hpa-qR-dj9" secondAttribute="bottom" constant="50" id="AhD-bj-o5m"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hpa-qR-dj9" secondAttribute="trailing" id="OXt-JB-Rxs"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="2fi-Jq-GWZ" secondAttribute="bottom" id="QIM-eo-iaZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="7K3-gY-SSW" secondAttribute="bottom" id="OrO-FD-dVO"/>
                 <constraint firstItem="hpa-qR-dj9" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="RBD-Ja-KVF"/>
-                <constraint firstItem="2fi-Jq-GWZ" firstAttribute="top" secondItem="hpa-qR-dj9" secondAttribute="bottom" id="Sb5-n2-ceE"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2fi-Jq-GWZ" secondAttribute="trailing" id="aZK-KT-mFw"/>
-                <constraint firstItem="2fi-Jq-GWZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="mdj-zm-Fcn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7K3-gY-SSW" secondAttribute="trailing" id="pfD-Wz-cEO"/>
                 <constraint firstItem="hpa-qR-dj9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="sNu-0t-RPx"/>
             </constraints>
             <point key="canvasLocation" x="58.778625954198468" y="-12.67605633802817"/>
