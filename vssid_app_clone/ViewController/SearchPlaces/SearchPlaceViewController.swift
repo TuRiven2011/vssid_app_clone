@@ -23,7 +23,9 @@ class SearchPlaceViewController: UIViewController {
     
     @IBOutlet weak var containtPickerView: UIView!
     
+    @IBOutlet weak var titleLbl: UILabel!
     let listData = Place()
+    var titleText: String = ""
     
     var currentDistrict: String = ""
     var curruntData: [String] = []
@@ -32,7 +34,7 @@ class SearchPlaceViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        titleLbl.text = titleText
         pickerView.delegate = self
         pickerView.dataSource = self
         containtPickerView.transform = .identity.translatedBy(x: 0, y: 300)
@@ -41,6 +43,11 @@ class SearchPlaceViewController: UIViewController {
         chooseDistrictView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapChooseDistrict(_:))))
         doneView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapDone(_:))))
     }
+    
+    @IBAction func popBtn(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     
     @objc func didTapChooseProvince(_ gesture: UITapGestureRecognizer) {
         selectProvince()

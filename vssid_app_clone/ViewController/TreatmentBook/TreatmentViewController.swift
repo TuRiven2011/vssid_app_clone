@@ -32,6 +32,11 @@ class TreatmentViewController: UIViewController {
         doneLbl.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapDone)))
     }
     
+    @IBAction func popBtn(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    
     
     @objc func didTapChooseYear(_ gesture: UITapGestureRecognizer) {
         UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: .curveEaseInOut) {

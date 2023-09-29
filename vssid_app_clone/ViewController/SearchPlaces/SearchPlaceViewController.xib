@@ -18,6 +18,7 @@
                 <outlet property="doneView" destination="Vuy-6b-zgf" id="KoP-0H-Clv"/>
                 <outlet property="pickerView" destination="ZMG-Sc-ZHa" id="irF-7H-Yz6"/>
                 <outlet property="provinceLbl" destination="3Do-Pv-kLi" id="P8u-aO-KRT"/>
+                <outlet property="titleLbl" destination="QcX-ge-D6P" id="YIe-EF-Oxk"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -232,6 +233,9 @@
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                             <state key="normal" title="Button" image="left-arrow"/>
+                            <connections>
+                                <action selector="popBtn:" destination="-1" eventType="touchUpInside" id="avd-Pl-LiQ"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" red="0.16862745098039217" green="0.396078431372549" blue="0.67450980392156867" alpha="1" colorSpace="deviceRGB"/>

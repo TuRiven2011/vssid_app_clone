@@ -31,6 +31,13 @@ class InsuranceInforViewController: UIViewController {
     
     let listData: [InsuranceInforEnum] = [.profileImage, .name, .date, .insuranceId, .birthday, .sex, .time, .address, .benefit ]
     
+    @IBAction func popBtn(_ sender: Any) {
+        
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

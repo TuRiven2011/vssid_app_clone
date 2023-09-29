@@ -382,6 +382,9 @@
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                             <state key="normal" title="Button" image="left-arrow"/>
+                            <connections>
+                                <action selector="popBtn:" destination="-1" eventType="touchUpInside" id="diI-T6-beY"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" red="0.16862745100000001" green="0.39607843139999999" blue="0.67450980390000004" alpha="1" colorSpace="deviceRGB"/>

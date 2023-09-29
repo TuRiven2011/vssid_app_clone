@@ -24,7 +24,10 @@ class ChangePasswordViewController: UIViewController {
         view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapBG(_:))))
     }
 
-
+    @IBAction func popBtn(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     @IBAction func finishChangePass(_ sender: Any) {
         
         if oldPass.text == "" {

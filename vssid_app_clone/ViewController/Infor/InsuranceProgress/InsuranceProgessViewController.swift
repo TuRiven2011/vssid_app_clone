@@ -26,6 +26,12 @@ class InsuranceProgessViewController: UIViewController {
     }
 
 
+    @IBAction func popBtn(_ sender: Any) {
+        
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    
     func configCollectionView() {
         collectionView.register(.init(nibName: "InsuranceProgressCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "InsuranceProgressCollectionViewCell")
         collectionView.delegate = self

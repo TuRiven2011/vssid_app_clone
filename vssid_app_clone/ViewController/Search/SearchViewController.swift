@@ -12,7 +12,7 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var searchColectionView: UICollectionView!
     
     let listData : [SearchEnum] = [ .fifth, .second, .third, .fourth, .fifth, .sixth]
-    
+    let titles: [String] = ["TRA CỨU MÃ SỐ BHXH", "TRA CỨU CƠ QUAN BHXH", "TRA CỨU CSKCB CẤP GIẤY NGHỈ", "TRA CỨU CSKCB KÝ HỢP ĐỒNG KCB", "TRA CỨU ĐƠN VỊ THAM GIA BHXH", "TRA CỨU TỔ CHỨC DỊCH VỤ THU BHXH, BHYT"]
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -114,10 +114,11 @@ extension SearchViewController: UICollectionViewDataSource, UICollectionViewDele
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if indexPath.row == 2 {
+       
             let vc = SearchPlaceViewController()
+            vc.titleText = titles[indexPath.row]
             self.navigationController?.pushViewController(vc, animated: true)
-        }
+
     }
     
 }
