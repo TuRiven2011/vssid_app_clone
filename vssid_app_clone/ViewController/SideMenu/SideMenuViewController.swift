@@ -83,6 +83,24 @@ extension SideMenuViewController: UITableViewDataSource, UITableViewDelegate {
             case .news:
                 let vc = NewsViewController()
                 navigationController?.pushViewController(vc, animated: true)
+            case .notification:
+                let vc = NotificationViewController()
+                navigationController?.pushViewController(vc, animated: true)
+            case .personal:
+                dismiss(animated: true)
+            case .service:
+                let vc = ServiceViewController()
+                navigationController?.pushViewController(vc, animated: true)
+            case .search:
+                let vc = SearchViewController.instantiate { coder in
+                    return SearchViewController(coder: coder)
+                }
+                navigationController?.pushViewController(vc, animated: true)
+            case .help:
+                let vc = HelpViewController()
+                navigationController?.pushViewController(vc, animated: true)
+            case .setting:
+                break
             default:
                 break
             }
