@@ -12,7 +12,9 @@
             <connections>
                 <outlet property="inviteInstallAppLabel" destination="UWn-so-SPi" id="IA6-de-KPT"/>
                 <outlet property="logInButton" destination="MeD-1A-5cd" id="xNj-VO-dD0"/>
+                <outlet property="passwordTextField" destination="r8M-Hq-AGG" id="EpF-6e-THx"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="vssidTextField" destination="FRP-nD-0o7" id="9pD-yA-pgJ"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

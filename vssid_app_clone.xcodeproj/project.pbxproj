@@ -16,6 +16,12 @@
 		4784B9D42AC4A7E5003A2C07 /* SideMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4784B9D22AC4A7E5003A2C07 /* SideMenuViewController.xib */; };
 		4784B9D82AC4ADD9003A2C07 /* ItemSideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4784B9D62AC4ADD9003A2C07 /* ItemSideMenuTableViewCell.swift */; };
 		4784B9D92AC4ADD9003A2C07 /* ItemSideMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4784B9D72AC4ADD9003A2C07 /* ItemSideMenuTableViewCell.xib */; };
+		4784B9DB2AC54F27003A2C07 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4784B9DA2AC54F27003A2C07 /* Storage.swift */; };
+		4784B9DD2AC55143003A2C07 /* LoginEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4784B9DC2AC55143003A2C07 /* LoginEntity.swift */; };
+		4784B9E12AC5E4D7003A2C07 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4784B9DF2AC5E4D7003A2C07 /* NewsViewController.swift */; };
+		4784B9E22AC5E4D7003A2C07 /* NewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4784B9E02AC5E4D7003A2C07 /* NewsViewController.xib */; };
+		4784B9E62AC5E554003A2C07 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4784B9E42AC5E554003A2C07 /* NewsTableViewCell.swift */; };
+		4784B9E72AC5E554003A2C07 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4784B9E52AC5E554003A2C07 /* NewsTableViewCell.xib */; };
 		47D377F22AC07DAC008759D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D377F12AC07DAC008759D4 /* AppDelegate.swift */; };
 		47D377F62AC07DAC008759D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D377F52AC07DAC008759D4 /* ViewController.swift */; };
 		47D377F92AC07DAC008759D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47D377F72AC07DAC008759D4 /* Main.storyboard */; };
@@ -83,6 +89,12 @@
 		4784B9D22AC4A7E5003A2C07 /* SideMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuViewController.xib; sourceTree = "<group>"; };
 		4784B9D62AC4ADD9003A2C07 /* ItemSideMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSideMenuTableViewCell.swift; sourceTree = "<group>"; };
 		4784B9D72AC4ADD9003A2C07 /* ItemSideMenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemSideMenuTableViewCell.xib; sourceTree = "<group>"; };
+		4784B9DA2AC54F27003A2C07 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		4784B9DC2AC55143003A2C07 /* LoginEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEntity.swift; sourceTree = "<group>"; };
+		4784B9DF2AC5E4D7003A2C07 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		4784B9E02AC5E4D7003A2C07 /* NewsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsViewController.xib; sourceTree = "<group>"; };
+		4784B9E42AC5E554003A2C07 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		4784B9E52AC5E554003A2C07 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
 		47D377EE2AC07DAC008759D4 /* vssid_app_clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vssid_app_clone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47D377F12AC07DAC008759D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47D377F52AC07DAC008759D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -184,6 +196,25 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		4784B9DE2AC5E4B0003A2C07 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				4784B9E32AC5E523003A2C07 /* Cell */,
+				4784B9DF2AC5E4D7003A2C07 /* NewsViewController.swift */,
+				4784B9E02AC5E4D7003A2C07 /* NewsViewController.xib */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		4784B9E32AC5E523003A2C07 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4784B9E42AC5E554003A2C07 /* NewsTableViewCell.swift */,
+				4784B9E52AC5E554003A2C07 /* NewsTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		47D377E52AC07DAC008759D4 = {
 			isa = PBXGroup;
 			children = (
@@ -236,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				822E18792AC09C1E00C35308 /* ServiceEntity.swift */,
+				4784B9DC2AC55143003A2C07 /* LoginEntity.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -250,6 +282,7 @@
 		47D378092AC07E51008759D4 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				4784B9DE2AC5E4B0003A2C07 /* News */,
 				82EB8B692AC46F7300ADB2D4 /* Notification */,
 				82057F952AC350E9001AFE14 /* CommonQuestion */,
 				82057F8B2AC3321E001AFE14 /* SearchPlaces */,
@@ -316,6 +349,7 @@
 				47D378182AC07E52008759D4 /* CommonEnum.swift */,
 				4784B9CB2AC30C39003A2C07 /* Constant.swift */,
 				4784B9CD2AC34FF6003A2C07 /* CommonUtils.swift */,
+				4784B9DA2AC54F27003A2C07 /* Storage.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -611,8 +645,10 @@
 				822E187F2AC11BEE00C35308 /* InforViewController.xib in Resources */,
 				47D378202AC07E52008759D4 /* HelpTableViewCell.xib in Resources */,
 				82057F852AC3090D001AFE14 /* ChangePasswordViewController.xib in Resources */,
+				4784B9E72AC5E554003A2C07 /* NewsTableViewCell.xib in Resources */,
 				4784B9D42AC4A7E5003A2C07 /* SideMenuViewController.xib in Resources */,
 				47D377F92AC07DAC008759D4 /* Main.storyboard in Resources */,
+				4784B9E22AC5E4D7003A2C07 /* NewsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -667,11 +703,15 @@
 			files = (
 				822E18A62AC1E8EA00C35308 /* InsuranceProgressCollectionViewCell.swift in Sources */,
 				822E187A2AC09C1E00C35308 /* ServiceEntity.swift in Sources */,
+				4784B9E62AC5E554003A2C07 /* NewsTableViewCell.swift in Sources */,
 				4784B9D82AC4ADD9003A2C07 /* ItemSideMenuTableViewCell.swift in Sources */,
 				4784B9CA2AC30A00003A2C07 /* AppNavigator.swift in Sources */,
+				4784B9DD2AC55143003A2C07 /* LoginEntity.swift in Sources */,
 				822E18832AC122B300C35308 /* InforTableViewCell.swift in Sources */,
+				4784B9E12AC5E4D7003A2C07 /* NewsViewController.swift in Sources */,
 				822E18A12AC1E60700C35308 /* InsuranceProgessViewController.swift in Sources */,
 				47D3781B2AC07E52008759D4 /* TabbarViewController.swift in Sources */,
+				4784B9DB2AC54F27003A2C07 /* Storage.swift in Sources */,
 				4784B9CE2AC34FF6003A2C07 /* CommonUtils.swift in Sources */,
 				47D378222AC07E52008759D4 /* CommonEnum.swift in Sources */,
 				822E189C2AC1C79B00C35308 /* InsuranceExampleViewController.swift in Sources */,

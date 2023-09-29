@@ -23,11 +23,11 @@ final class AppNavigator: AppNavigatorType {
     }
     
     func start() {
-        //        if AppData.isLogin {
-        //            switchToMain()
-        //        } else {
-        //            swichToLogin()
-        //        }
+        if AppData.isLogin {
+            switchToMain()
+        } else {
+            swichToLogin()
+        }
     }
     
     func swichToLogin() {
