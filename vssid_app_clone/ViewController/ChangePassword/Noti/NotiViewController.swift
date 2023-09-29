@@ -13,6 +13,8 @@ class NotiViewController: UIViewController {
     
     
     var text : String?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         contentLbl.text = text

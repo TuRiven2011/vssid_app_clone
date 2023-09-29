@@ -9,9 +9,12 @@ import UIKit
 
 class SideMenuViewController: UIViewController {
     
-    @IBOutlet weak var menuTableView: UITableView!
+    
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var vssIDLabel: UILabel!
+    
+    @IBOutlet weak var idLabel: UILabel!
+    @IBOutlet weak var menuTableView: UITableView!
+    
     
     let section1: [SideMenuEnum] = SideMenuEnum.allCases.filter({$0.title != "Đổi mật khẩu" && $0.title != "Đăng xuất"})
     let section2: [SideMenuEnum] = [
@@ -28,6 +31,10 @@ class SideMenuViewController: UIViewController {
     }
     
     private func configUI() {
+        
+        nameLabel.text = AppData.loginInfor?.userName
+        
+        idLabel.text = AppData.loginInfor?.password
         let gradient = CAGradientLayer()
         
         gradient.frame = view.bounds
@@ -81,7 +88,7 @@ extension SideMenuViewController: UITableViewDataSource, UITableViewDelegate {
                 let vc = ChangePasswordViewController()
                 navigationController?.pushViewController(vc, animated: true)
             case .logOut:
-                APP_DELEGATE?.appNavigator?.swichToLogin()
+                AppData.logout()
             default:
                 break
             }

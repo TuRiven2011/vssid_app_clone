@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         appNavigator = .init(window: window)
         
-        appNavigator?.swichToLogin()
+        appNavigator?.start()
         
         return true
     }
