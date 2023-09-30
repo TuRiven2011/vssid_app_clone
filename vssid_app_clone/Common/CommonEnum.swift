@@ -92,7 +92,7 @@ enum InforEnum {
     var infor: String {
         switch(self) {
         case .name:
-            return "Trần Minh Tuấn"
+            return "Phạm Thanh Tú"
         case .insuranceId:
             return "010101001010"
         case .birthday:
@@ -119,7 +119,7 @@ enum InsuranceInforEnum {
         case .profileImage:
             return "avatar"
         case .name:
-            return "Trần Minh Tuấn"
+            return "Phạm Thanh Tú"
         case .insuranceId:
             return "10229394839"
         case .birthday:
@@ -148,7 +148,7 @@ enum UseCardEnum {
         case .insuranceId:
             return "9127317313"
         case .name:
-            return "Trần Minh Tuấn"
+            return "Phạm Thanh Tú"
         }
         
     }
