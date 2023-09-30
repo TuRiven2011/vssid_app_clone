@@ -30,16 +30,11 @@ class ChangePasswordViewController: UIViewController {
     
     @IBAction func finishChangePass(_ sender: Any) {
         
-        if oldPass.text == "" {
+        if oldPass.text?.isEmpty == true || newPass.text?.isEmpty == true || newPass2.text?.isEmpty == true{
             label.text = "Vui lòng nhập đủ thông tin!"
             
-        } else if newPass.text == "" {
-            label.text = "Vui lòng nhập đủ thông tin!"
-            
-        } else if newPass2.text == "" {
-            label.text = "Vui lòng nhập đủ thông tin!"
-            
-        }else if newPass.text != newPass2.text {
+        }
+        if newPass.text != newPass2.text {
             label.text = "Mật khẩu nhập lại không khớp!"
         }
         addNoti()

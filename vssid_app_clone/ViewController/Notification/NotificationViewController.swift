@@ -25,6 +25,9 @@ class NotificationViewController: UIViewController {
         
     }
 
+    @IBAction func popBtn(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
 }
 
 //extension NotificationViewController: UITableViewDelegate, UITableViewDataSource {
