@@ -192,7 +192,7 @@ enum SideMenuEnum: CaseIterable {
         case .personal:
             return .init(named: "new_menu_canhan") ?? .init()
         case .service:
-            return .init(named: "dichvucongTab") ?? .init()
+            return .init(named: "dvcongtrang") ?? .init()
         case .search:
             return .init(named: "new_menu_tracuu") ?? .init()
         case .help:

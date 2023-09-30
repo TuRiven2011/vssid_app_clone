@@ -10,6 +10,8 @@ import UIKit
 class SideMenuViewController: UIViewController {
     
     
+    @IBOutlet weak var dividerView: UIView!
+    @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var nameLabel: UILabel!
     
     @IBOutlet weak var idLabel: UILabel!
@@ -32,6 +34,11 @@ class SideMenuViewController: UIViewController {
     
     private func configUI() {
         
+        dividerView.layer.shadowColor = UIColor.black.cgColor
+        dividerView.layer.shadowOpacity = 0.8
+        dividerView.layer.shadowOffset = CGSize(width: 0, height: 1)
+        dividerView.layer.shadowRadius = 2
+        
         nameLabel.text = AppData.loginInfor?.userName
         
         idLabel.text = AppData.loginInfor?.password
@@ -49,6 +56,11 @@ class SideMenuViewController: UIViewController {
                                      bundle: nil), forCellReuseIdentifier: "ItemSideMenuTableViewCell")
         menuTableView.delegate = self
         menuTableView.dataSource = self
+        menuTableView.tableHeaderView = .init(frame: .zero)
+        menuTableView.tableFooterView = .init(frame: .zero)
+        menuTableView.sectionHeaderHeight = 0
+        menuTableView.estimatedSectionHeaderHeight = 0
+        menuTableView.contentInset = .init(top: -20, left: 0, bottom: 0, right: 0)
     }
     
 }
@@ -74,7 +86,7 @@ extension SideMenuViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 60
+        return 54
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -115,5 +127,9 @@ extension SideMenuViewController: UITableViewDataSource, UITableViewDelegate {
                 break
             }
         }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 0
     }
 }

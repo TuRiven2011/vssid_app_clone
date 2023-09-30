@@ -12,7 +12,7 @@ struct AppData {
     @Storage(key: "isLogin", defaultValue: false)
     static var isLogin: Bool
     
-    @Storage(key: "loginInfor", defaultValue: nil)
+    @StorageObject(key: "loginInfor", defaultValue: nil)
     static var loginInfor: LoginEntity?
     
     

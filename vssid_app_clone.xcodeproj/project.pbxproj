@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47108DC12AC887BC00F81F43 /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47108DC02AC887BC00F81F43 /* UserEntity.swift */; };
 		4784B9C82AC1DE3D003A2C07 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4784B9C72AC1DE3D003A2C07 /* UIViewControllerExtension.swift */; };
 		4784B9CA2AC30A00003A2C07 /* AppNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4784B9C92AC30A00003A2C07 /* AppNavigator.swift */; };
 		4784B9CC2AC30C39003A2C07 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4784B9CB2AC30C39003A2C07 /* Constant.swift */; };
@@ -90,6 +91,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47108DC02AC887BC00F81F43 /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
 		4784B9C72AC1DE3D003A2C07 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		4784B9C92AC30A00003A2C07 /* AppNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigator.swift; sourceTree = "<group>"; };
 		4784B9CB2AC30C39003A2C07 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
@@ -289,6 +291,7 @@
 				822E18792AC09C1E00C35308 /* ServiceEntity.swift */,
 				4784B9E82AC69E7E003A2C07 /* NewsEntity.swift */,
 				4784B9DC2AC55143003A2C07 /* LoginEntity.swift */,
+				47108DC02AC887BC00F81F43 /* UserEntity.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -813,6 +816,7 @@
 				82057F932AC343C7001AFE14 /* NotiViewController.swift in Sources */,
 				47D377F22AC07DAC008759D4 /* AppDelegate.swift in Sources */,
 				82057F842AC3090D001AFE14 /* ChangePasswordViewController.swift in Sources */,
+				47108DC12AC887BC00F81F43 /* UserEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

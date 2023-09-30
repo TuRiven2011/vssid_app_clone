@@ -52,7 +52,7 @@ class HelpViewController: UIViewController {
         if #available(iOS 13.0, *) {
             let appearance = UINavigationBarAppearance()
             appearance.configureWithDefaultBackground()
-            appearance.backgroundColor = UIColor(rgb: 0xFF2B65AC)
+            appearance.backgroundColor = UIColor(rgb: 0xFF3070C0)
             appearance.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
             appearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
 
@@ -62,7 +62,7 @@ class HelpViewController: UIViewController {
 
         } else {
             self.navigationController?.navigationBar.tintColor = .white
-            self.navigationController?.navigationBar.barTintColor = UIColor(rgb: 0xFF2B65AC)
+            self.navigationController?.navigationBar.barTintColor = UIColor(rgb: 0xFF3070C0)
             self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
             self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         }

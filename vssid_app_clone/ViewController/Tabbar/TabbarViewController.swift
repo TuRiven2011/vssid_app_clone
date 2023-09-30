@@ -34,10 +34,10 @@ class TabbarViewController: ESTabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        initItem()
         configUI()
         initSideMenu()
         addListenerShowSideMenu()
-        initItem()
         // Do any additional setup after loading the view.
     }
     
@@ -59,6 +59,8 @@ class TabbarViewController: ESTabBarController {
         self.tabBar.backgroundColor = .white
         self.tabBar.layer.borderWidth = 1
         self.tabBar.layer.borderColor = UIColor.black.withAlphaComponent(0.1).cgColor
+        
+        self.selectedIndex = 0
         
     }
     
