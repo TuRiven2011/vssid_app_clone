@@ -1,9 +1,4 @@
-//
-//  HelpTableViewCell.swift
-//  clone_vssid
-//
-//  Created by Phạm Bá Tú on 23/09/2023.
-//
+
 
 import UIKit
 

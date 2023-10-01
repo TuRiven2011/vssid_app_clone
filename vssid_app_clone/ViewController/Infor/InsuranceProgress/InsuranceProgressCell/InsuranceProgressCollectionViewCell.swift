@@ -1,9 +1,4 @@
-//
-//  InsuranceProgressCollectionViewCell.swift
-//  vssid_app_clone
-//
-//  Created by Đặng An Hưng on 25/09/2023.
-//
+
 
 import UIKit
 

@@ -1,9 +1,4 @@
-//
-//  Constant.swift
-//  vssid_app_clone
-//
-//  Created by Phạm Bá Tú on 26/09/2023.
-//
+
 
 import Foundation
 import UIKit
