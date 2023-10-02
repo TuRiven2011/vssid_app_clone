@@ -76,6 +76,8 @@
 		825F403F2AC0871500546E60 /* SearchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 825F403E2AC0871500546E60 /* SearchViewController.storyboard */; };
 		825F40422AC0874E00546E60 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825F40412AC0874E00546E60 /* SearchViewController.swift */; };
 		825F40442AC08B7F00546E60 /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825F40432AC08B7F00546E60 /* SearchCollectionViewCell.swift */; };
+		8290D14D2ACAED2700496494 /* InsertInforViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8290D14B2ACAED2700496494 /* InsertInforViewController.swift */; };
+		8290D14E2ACAED2700496494 /* InsertInforViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8290D14C2ACAED2700496494 /* InsertInforViewController.xib */; };
 		82EB8B622AC359D900ADB2D4 /* CommonQuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EB8B602AC359D900ADB2D4 /* CommonQuestionTableViewCell.swift */; };
 		82EB8B632AC359D900ADB2D4 /* CommonQuestionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82EB8B612AC359D900ADB2D4 /* CommonQuestionTableViewCell.xib */; };
 		82EB8B672AC35D1000ADB2D4 /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EB8B652AC35D1000ADB2D4 /* AnswerViewController.swift */; };
@@ -162,6 +164,8 @@
 		825F403E2AC0871500546E60 /* SearchViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchViewController.storyboard; sourceTree = "<group>"; };
 		825F40412AC0874E00546E60 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		825F40432AC08B7F00546E60 /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		8290D14B2ACAED2700496494 /* InsertInforViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertInforViewController.swift; sourceTree = "<group>"; };
+		8290D14C2ACAED2700496494 /* InsertInforViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InsertInforViewController.xib; sourceTree = "<group>"; };
 		82EB8B602AC359D900ADB2D4 /* CommonQuestionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonQuestionTableViewCell.swift; sourceTree = "<group>"; };
 		82EB8B612AC359D900ADB2D4 /* CommonQuestionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonQuestionTableViewCell.xib; sourceTree = "<group>"; };
 		82EB8B652AC35D1000ADB2D4 /* AnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerViewController.swift; sourceTree = "<group>"; };
@@ -303,6 +307,7 @@
 		47D378092AC07E51008759D4 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				8290D14A2ACAECE700496494 /* Insert Infor */,
 				825666A02AC5D90B00AED104 /* CreatAccount */,
 				82EB8B732AC5C86800ADB2D4 /* RegisterView */,
 				4784B9DE2AC5E4B0003A2C07 /* News */,
@@ -576,6 +581,15 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
+		8290D14A2ACAECE700496494 /* Insert Infor */ = {
+			isa = PBXGroup;
+			children = (
+				8290D14B2ACAED2700496494 /* InsertInforViewController.swift */,
+				8290D14C2ACAED2700496494 /* InsertInforViewController.xib */,
+			);
+			path = "Insert Infor";
+			sourceTree = "<group>";
+		};
 		82EB8B5F2AC356CE00ADB2D4 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -700,6 +714,7 @@
 				82057F942AC343C7001AFE14 /* NotiViewController.xib in Resources */,
 				822E18A22AC1E60700C35308 /* InsuranceProgessViewController.xib in Resources */,
 				82057F992AC35114001AFE14 /* CommonQuestionViewController.xib in Resources */,
+				8290D14E2ACAED2700496494 /* InsertInforViewController.xib in Resources */,
 				822E189D2AC1C79B00C35308 /* InsuranceExampleViewController.xib in Resources */,
 				82057F8F2AC33242001AFE14 /* SearchPlaceViewController.xib in Resources */,
 				822E188E2AC137C000C35308 /* ServiceTableViewCell.xib in Resources */,
@@ -789,6 +804,7 @@
 				47D3781E2AC07E52008759D4 /* HelpViewController.swift in Sources */,
 				82057F892AC31514001AFE14 /* TreatmentViewController.swift in Sources */,
 				4784B9CC2AC30C39003A2C07 /* Constant.swift in Sources */,
+				8290D14D2ACAED2700496494 /* InsertInforViewController.swift in Sources */,
 				82EB8B762AC5C89300ADB2D4 /* RegisterViewController.swift in Sources */,
 				825F40422AC0874E00546E60 /* SearchViewController.swift in Sources */,
 				82057F8E2AC33242001AFE14 /* SearchPlaceViewController.swift in Sources */,
