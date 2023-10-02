@@ -1,9 +1,4 @@
-//
-//  ViewController.swift
-//  vssid_app_clone
-//
-//  Created by Phạm Bá Tú on 24/09/2023.
-//
+
 
 import UIKit
 

@@ -1,9 +1,4 @@
-//
-//  CommonQuestionViewController.swift
-//  vssid_app_clone
-//
-//  Created by Đặng An Hưng on 27/09/2023.
-//
+
 
 import UIKit
 
