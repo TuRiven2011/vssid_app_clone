@@ -66,30 +66,37 @@ extension InsuranceProgessViewController: UICollectionViewDelegate, UICollection
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "InsuranceProgressCollectionViewCell", for: indexPath) as? InsuranceProgressCollectionViewCell else {return UICollectionViewCell()}
         
+        cell.tapEye1Completion = {
+            let vc = DetailInsuranceViewController()
+            
+            vc.modalTransitionStyle = .coverVertical
+            vc.modalPresentationStyle = .fullScreen
+        }
+        
         return cell
     }
     
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        for cell in self.collectionView.visibleCells {
-            if let row = self.collectionView.indexPath(for: cell)?.item {
-              listItemStackView.arrangedSubviews.forEach { elemen in
-                  if(elemen.tag == row) {
-                      for sub in elemen.subviews {
-                          if let sub = sub as? UIImageView {
-                              sub.tintColor = UIColor.blue
-                          }
-                      }
-                  } else {
-                      for sub in elemen.subviews {
-                          if let sub = sub as? UIImageView {
-                              sub.tintColor = .darkGray
-                          }
-                      }
-                  }
-              }
-          }
-        }
-    }
+//    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+//        for cell in self.collectionView.visibleCells {
+//            if let row = self.collectionView.indexPath(for: cell)?.item {
+//              listItemStackView.arrangedSubviews.forEach { elemen in
+//                  if(elemen.tag == row) {
+//                      for sub in elemen.subviews {
+//                          if let sub = sub as? UIImageView {
+//                              sub.tintColor = UIColor.blue
+//                          }
+//                      }
+//                  } else {
+//                      for sub in elemen.subviews {
+//                          if let sub = sub as? UIImageView {
+//                              sub.tintColor = .darkGray
+//                          }
+//                      }
+//                  }
+//              }
+//          }
+//        }
+//    }
     
    
 

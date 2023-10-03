@@ -128,7 +128,7 @@ enum InsuranceInforEnum {
         case .time:
             return "22/12/2023 đến 22/12/2028"
         case .benefit:
-            return "Dù bạn chỉ là một sinh viên mới tốt nghiệp ở độ tuổi 20, hay đang đầu vì khoản nợ trong quá khứ cùng kế hoạch kết hôn ở độ tuổi 30, dự định lập kế hoạch đầu tư cho bất động sản khi 50 tuổi. Bạn thấy đó, dù ở lứa tuổi nào trong cuộc đời thì chúng ta đều có hai điểm chung này: Chúng ta ai cũng có người thân trong gia đình mà bạn hết mực yêu thương. Lo âu vì những rủi ro xảy ra trong tương lai mà bạn không thể lường trước. Đó là lý do mà bảo hiểm nhân thọ Sun Life ra đời và luôn được Khách hàng tin tưởng lựa chọn để đảm bảo cho sự an toàn tương lai, từ đó an tâm phát triển sự nghiệp, hướng đến một tương lai tươi sáng. Đúng như vậy, bạn không thể biết chính xác rủi ro sẽ xảy đến vào lúc nào. Nếu có bảo hiểm nhân thọ, bạn có thể chuẩn bị cho những rủi ro không lường trước trong tương lai. Chính bảo hiểm nhân thọ xây dựng cho bạn một tinh thần luôn vững vàng, an tâm trước những vấn đề trong cuộc sống. Khi nói về khả năng xấu nhất xảy ra thì bạn và những người thân yêu của bạn luôn có sự hỗ trợ về tài chính và tinh thần. Bảo hiểm nhân thọ mang lại cho bạn điều gì ở độ tuổi từ 20 đến 40 "
+            return "Được hưởng 80% chi phí khám bệnh, chữa bệnh trong phạm vi được hưởng BHYT \n(áp dụng tỷ lệ thanh toán một số thuốc, hoá chất, vật tư y tế và dịch vụ kỹ thuật theo quy định của Bộ trưởng Bộ Y tế),\nTrong trường hợp điều trị nội trú trái tuyến tại CSKCB tuyến TW sẽ được hưởng 32% (TH trên thẻ có mã nơi sinh sống là K1 hoặc K2 hoặc K3 sẽ được 80%),\nCSKCB tuyến tỉnh sẽ được hưởng 48% (TH trên thẻ có mã nơi sinh sống là K1 hoặc K2 hoặc K3 sẽ được 80%),\ntừ ngày 1/1/2021 sẽ hưởng 80%, CSKCB là bệnh viện tuyến huyện sẽ hưởng 80% Chi phí trong phạm vi hưởng BHYT\n(áp dụng tỷ lệ thanh toán một số thuốc, hoá chất, vật tư y tế và dịch vụ kỹ thuật theo quy định của Bộ trươgr Bộ Y tế)"
         }
     }
 }
@@ -187,7 +187,7 @@ enum SideMenuEnum: CaseIterable {
         case .personal:
             return .init(named: "new_menu_canhan") ?? .init()
         case .service:
-            return .init(named: "dichvucongTab") ?? .init()
+            return .init(named: "dvcongtrang") ?? .init()
         case .search:
             return .init(named: "new_menu_tracuu") ?? .init()
         case .help:

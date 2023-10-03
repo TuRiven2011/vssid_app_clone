@@ -13,6 +13,7 @@ class LoginViewController: UIViewController {
     
     @IBAction func handleLogin(_ sender: Any) {
         
+        
         if vssidTextField.text?.isEmpty == true || passwordTextField.text?.isEmpty == true {
             
             let vc = NotiViewController()
@@ -23,13 +24,6 @@ class LoginViewController: UIViewController {
             present(vc, animated: true)
             
         } else {
-            
-//            var loginInfor = LoginEntity()
-//            loginInfor.userName = vssidTextField.text
-//            loginInfor.password = passwordTextField.text
-//            
-//            AppData.loginInfor = loginInfor
-            
             AppData.logIn()
         }
     }

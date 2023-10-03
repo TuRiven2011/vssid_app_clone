@@ -29,15 +29,20 @@ class TabbarViewController: ESTabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        initItem()
         configUI()
         initSideMenu()
         addListenerShowSideMenu()
-        initItem()
+        addListenerShowTab()
         // Do any additional setup after loading the view.
     }
     
     private func addListenerShowSideMenu() {
         NotificationCenter.default.addObserver(self, selector: #selector(showSideMenu(_ :)), name: .SHOW_SIDE_MENU, object: nil)
+    }
+    
+    private func addListenerShowTab() {
+        NotificationCenter.default.addObserver(self, selector: #selector(showTabNumber(_ :)), name: .SELECT_TAB_BAR, object: nil)
     }
     
     
@@ -55,6 +60,7 @@ class TabbarViewController: ESTabBarController {
         self.tabBar.layer.borderWidth = 1
         self.tabBar.layer.borderColor = UIColor.black.withAlphaComponent(0.1).cgColor
         
+        self.selectedIndex = 0
     }
     
     
@@ -93,9 +99,18 @@ extension TabbarViewController {
     @objc func showSideMenu (_ notification: Notification) {
         present(menu!, animated: true)
     }
+    
+    @objc func showTabNumber (_ notification: Notification) {
+        let data = notification.userInfo as? [String: Any] ?? [:]
+        selectedIndex = data["tab"] as? Int ?? 0
+        
+        dismiss(animated: true)
+        
+    }
 }
 
 extension Notification.Name {
     static let SHOW_SIDE_MENU = Notification.Name("SHOW_SIDE_MENU")
+    static let SELECT_TAB_BAR = Notification.Name("SELECT_TAB_BAR")
 }
 

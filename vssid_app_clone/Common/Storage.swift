@@ -7,8 +7,8 @@ struct AppData {
     @Storage(key: "isLogin", defaultValue: false)
     static var isLogin: Bool
     
-    @Storage(key: "loginInfor", defaultValue: nil)
-    static var loginInfor: LoginEntity?
+    @StorageObject(key: "loginInfor", defaultValue: nil)
+    static var loginInfor: UserEntity?
     
     
 }
@@ -24,7 +24,6 @@ extension AppData {
     
     static func logout() {
         AppData.isLogin = false
-        
         DispatchQueue.main.async {
             APP_DELEGATE?.appNavigator?.swichToLogin()
         }

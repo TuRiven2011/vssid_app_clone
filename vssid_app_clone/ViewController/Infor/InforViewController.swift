@@ -4,6 +4,8 @@ import UIKit
 
 class InforViewController: UIViewController {
 
+    @IBOutlet weak var cccdLbl: UILabel!
+    
     @IBOutlet weak var inforTableView: UITableView!
     
     @IBOutlet weak var profileImage: UIImageView!
@@ -31,8 +33,8 @@ class InforViewController: UIViewController {
         super.viewDidLoad()
 
         setupNavigationBar(title: "Quản lý cá nhân".uppercased())
+        configUI()
         configTableView()
-        binding()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -49,13 +51,23 @@ class InforViewController: UIViewController {
         
     }
     
+    private func configUI() {
+        profileImage.image = UIImage(named: listData[0].infor)
+        nameLbl.text = AppData.loginInfor?.name
+        insuranceIdLbl.text = AppData.loginInfor?.bhxhID
+        cccdLbl.text = AppData.loginInfor?.cccd
+        phoneLbl.text = AppData.loginInfor?.phone
+        addressLbl.text = AppData.loginInfor?.address
+        birdayLbl.text = AppData.loginInfor?.birth
+    }
+    
     private func setupNavigationBar(title: String) {
         
         navigationItem.title = title
         if #available(iOS 13.0, *) {
             let appearance = UINavigationBarAppearance()
             appearance.configureWithDefaultBackground()
-            appearance.backgroundColor = UIColor(rgb: 0xFF2B65AC)
+            appearance.backgroundColor = UIColor(rgb: 0xFF3070C0)
             appearance.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
             appearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
 
@@ -65,7 +77,7 @@ class InforViewController: UIViewController {
 
         } else {
             self.navigationController?.navigationBar.tintColor = .white
-            self.navigationController?.navigationBar.barTintColor = UIColor(rgb: 0xFF2B65AC)
+            self.navigationController?.navigationBar.barTintColor = UIColor(rgb: 0xFF3070C0)
             self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
             self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         }
@@ -108,16 +120,6 @@ class InforViewController: UIViewController {
         inforTableView.register(.init(nibName: "InforTableViewCell", bundle: nil), forCellReuseIdentifier: "InforTableViewCell")
         inforTableView.delegate = self
         inforTableView.dataSource = self
-    }
-    
-    private func binding() {
-        profileImage.image = UIImage(named: listData[0].infor)
-        nameLbl.text = listData[1].infor
-        insuranceIdLbl.text = listData[2].infor
-        birdayLbl.text = listData[3].infor
-        personalIDLbl.text = listData[4].infor
-        phoneLbl.text = listData[5].infor
-        addressLbl.text = listData[6].infor
     }
   
 
