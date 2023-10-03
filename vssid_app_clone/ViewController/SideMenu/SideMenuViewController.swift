@@ -96,16 +96,39 @@ extension SideMenuViewController: UITableViewDataSource, UITableViewDelegate {
             case .personal:
                 dismiss(animated: true)
             case .service:
-                let vc = ServiceViewController()
-                navigationController?.pushViewController(vc, animated: true)
+                
+                
+                let res = ["tab": 1]
+                NotificationCenter.default
+                    .post(name:          .SELECT_TAB_BAR,
+                             object: nil,
+                             userInfo: res)
+                
+//                let vc = ServiceViewController()
+//                navigationController?.pushViewController(vc, animated: true)
             case .search:
-                let vc = SearchViewController.instantiate { coder in
-                    return SearchViewController(coder: coder)
-                }
-                navigationController?.pushViewController(vc, animated: true)
+                
+                
+                let res = ["tab": 2]
+                NotificationCenter.default
+                    .post(name:          .SELECT_TAB_BAR,
+                             object: nil,
+                             userInfo: res)
+                
+//                let vc = SearchViewController.instantiate { coder in
+//                    return SearchViewController(coder: coder)
+//                }
+//                navigationController?.pushViewController(vc, animated: true)
             case .help:
-                let vc = HelpViewController()
-                navigationController?.pushViewController(vc, animated: true)
+                
+                let res = ["tab": 3]
+                NotificationCenter.default
+                    .post(name:          .SELECT_TAB_BAR,
+                             object: nil,
+                             userInfo: res)
+                
+//                let vc = HelpViewController()
+//                navigationController?.pushViewController(vc, animated: true)
             case .setting:
                 break
             default:

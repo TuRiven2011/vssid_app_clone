@@ -4,6 +4,8 @@ import UIKit
 
 class InforViewController: UIViewController {
 
+    @IBOutlet weak var cccdLbl: UILabel!
+    
     @IBOutlet weak var inforTableView: UITableView!
     
     @IBOutlet weak var profileImage: UIImageView!
@@ -31,8 +33,8 @@ class InforViewController: UIViewController {
         super.viewDidLoad()
 
         setupNavigationBar(title: "Quản lý cá nhân".uppercased())
+        configUI()
         configTableView()
-        binding()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -47,6 +49,16 @@ class InforViewController: UIViewController {
         navigationController?.isNavigationBarHidden = true
         navigationController?.navigationBar.isHidden = true
         
+    }
+    
+    private func configUI() {
+        profileImage.image = UIImage(named: listData[0].infor)
+        nameLbl.text = AppData.loginInfor?.name
+        insuranceIdLbl.text = AppData.loginInfor?.bhxhID
+        cccdLbl.text = AppData.loginInfor?.cccd
+        phoneLbl.text = AppData.loginInfor?.phone
+        addressLbl.text = AppData.loginInfor?.address
+        birdayLbl.text = AppData.loginInfor?.birth
     }
     
     private func setupNavigationBar(title: String) {
@@ -108,16 +120,6 @@ class InforViewController: UIViewController {
         inforTableView.register(.init(nibName: "InforTableViewCell", bundle: nil), forCellReuseIdentifier: "InforTableViewCell")
         inforTableView.delegate = self
         inforTableView.dataSource = self
-    }
-    
-    private func binding() {
-        profileImage.image = UIImage(named: listData[0].infor)
-        nameLbl.text = listData[1].infor
-        insuranceIdLbl.text = listData[2].infor
-        birdayLbl.text = listData[3].infor
-        personalIDLbl.text = listData[4].infor
-        phoneLbl.text = listData[5].infor
-        addressLbl.text = listData[6].infor
     }
   
 

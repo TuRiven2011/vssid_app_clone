@@ -13,6 +13,7 @@
             <connections>
                 <outlet property="addressLbl" destination="8eL-Qc-4eU" id="5MA-Y4-EJn"/>
                 <outlet property="birdayLbl" destination="y83-Ey-LIT" id="6aM-sW-CeG"/>
+                <outlet property="cccdLbl" destination="yLj-5u-ecD" id="Xue-zq-uIO"/>
                 <outlet property="inforTableView" destination="Vm5-Cc-vfg" id="csL-EC-RFR"/>
                 <outlet property="insuranceIdLbl" destination="u1R-Ol-7Ub" id="j0s-LS-DKe"/>
                 <outlet property="nameLbl" destination="Nx6-he-Kws" id="50W-nB-SrA"/>

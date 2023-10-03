@@ -44,13 +44,13 @@ class InsuranceInforViewController: UIViewController {
 
     func binding() {
         profileImage.image = UIImage(named: listData[0].infor)
-        nameLbl.text = listData[1].infor
-        time.text = listData[2].infor
+        nameLbl.text = AppData.loginInfor?.name
+        time.text = AppData.loginInfor?.bhyt?.startDate
         insuranceIdLbl.text = listData[3].infor
-        birdayLbl.text = listData[4].infor
-        sex.text = listData[5].infor
+        birdayLbl.text = AppData.loginInfor?.birth
+        sex.text = AppData.loginInfor?.bhyt?.sex
         dateLbl.text = listData[6].infor
-        addressLbl.text = listData[7].infor
+        addressLbl.text = AppData.loginInfor?.bhyt?.registerLocation
         benefitsInforLbl.text = listData[8].infor
         
     }
