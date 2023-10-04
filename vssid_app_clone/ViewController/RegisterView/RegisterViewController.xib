@@ -431,6 +431,17 @@
                                         <action selector="handleAddBHXH:" destination="-1" eventType="touchUpInside" id="iK9-Jh-LYc"/>
                                     </connections>
                                 </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="inw-Rx-lMJ">
+                                    <rect key="frame" x="156.66666666666666" y="782" width="80" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="80" id="YxM-OD-s6l"/>
+                                        <constraint firstAttribute="height" constant="60" id="tbI-zL-hp6"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <connections>
+                                        <action selector="addProgressAction:" destination="-1" eventType="touchUpInside" id="O1v-gR-kk7"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
@@ -446,9 +457,11 @@
                                 <constraint firstAttribute="trailing" secondItem="l7t-Ag-emp" secondAttribute="trailing" id="T6r-lF-mrP"/>
                                 <constraint firstItem="2Dd-qq-Y2q" firstAttribute="top" secondItem="HYB-RP-HRP" secondAttribute="top" id="YeD-iu-a20"/>
                                 <constraint firstItem="Tyj-sV-13e" firstAttribute="leading" secondItem="HYB-RP-HRP" secondAttribute="leading" constant="10" id="ajk-Eu-7bA"/>
+                                <constraint firstAttribute="bottom" secondItem="inw-Rx-lMJ" secondAttribute="bottom" constant="10" id="arX-Se-CB6"/>
                                 <constraint firstAttribute="bottom" secondItem="l7t-Ag-emp" secondAttribute="bottom" constant="30" id="eRi-Xg-BRm"/>
                                 <constraint firstAttribute="trailing" secondItem="2Dd-qq-Y2q" secondAttribute="trailing" id="iMz-lO-dcI"/>
                                 <constraint firstAttribute="trailing" secondItem="Epf-uh-Vef" secondAttribute="trailing" constant="10" id="khr-9c-IRW"/>
+                                <constraint firstItem="inw-Rx-lMJ" firstAttribute="centerX" secondItem="HYB-RP-HRP" secondAttribute="centerX" id="nJe-GS-G92"/>
                                 <constraint firstItem="Epf-uh-Vef" firstAttribute="top" secondItem="2Dd-qq-Y2q" secondAttribute="bottom" id="uan-lh-Uts"/>
                                 <constraint firstItem="U3p-xK-QjT" firstAttribute="leading" secondItem="HYB-RP-HRP" secondAttribute="leading" constant="10" id="uoa-fo-uGO"/>
                                 <constraint firstItem="Tyj-sV-13e" firstAttribute="top" secondItem="Epf-uh-Vef" secondAttribute="bottom" id="wur-KT-6jb"/>

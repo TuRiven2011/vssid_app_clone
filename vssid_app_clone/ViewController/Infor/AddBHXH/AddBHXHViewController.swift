@@ -1,9 +1,4 @@
-//
-//  AddBHXHViewController.swift
-//  vssid_app_clone
-//
-//  Created by Phạm Bá Tú on 01/10/2023.
-//
+
 
 import UIKit
 

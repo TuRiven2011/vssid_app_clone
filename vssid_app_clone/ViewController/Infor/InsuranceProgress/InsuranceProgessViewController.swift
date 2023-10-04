@@ -66,11 +66,34 @@ extension InsuranceProgessViewController: UICollectionViewDelegate, UICollection
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "InsuranceProgressCollectionViewCell", for: indexPath) as? InsuranceProgressCollectionViewCell else {return UICollectionViewCell()}
         
-        cell.tapEye1Completion = {
+        cell.tapEye1Completion = {[weak self] in
+            guard let self = self else {return}
             let vc = DetailInsuranceViewController()
             
             vc.modalTransitionStyle = .coverVertical
             vc.modalPresentationStyle = .fullScreen
+            
+            self.present(vc, animated: true)
+        }
+        
+        cell.tapEye2Completion = {[weak self] in
+            guard let self = self else {return}
+            let vc = DetailInsuranceViewController()
+            
+            vc.modalTransitionStyle = .coverVertical
+            vc.modalPresentationStyle = .fullScreen
+            
+            self.present(vc, animated: true)
+        }
+        
+        cell.tapEye3Completion = {[weak self] in
+            guard let self = self else {return}
+            let vc = DetailInsuranceViewController()
+            
+            vc.modalTransitionStyle = .coverVertical
+            vc.modalPresentationStyle = .fullScreen
+            
+            self.present(vc, animated: true)
         }
         
         return cell

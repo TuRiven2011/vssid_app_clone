@@ -16,6 +16,13 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var addressTextField: UITextField!
     
     @IBOutlet weak var phoneTextField: UITextField!
+    
+    
+    @IBAction func addProgressAction(_ sender: Any) {
+        let vc = InsertInforViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,6 +11,24 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InsertInforViewController" customModule="vssid_app_clone" customModuleProvider="target">
             <connections>
+                <outlet property="address1" destination="i2c-6i-WC3" id="OgG-9A-292"/>
+                <outlet property="address2" destination="A6s-g2-sx7" id="Ki8-TB-O4N"/>
+                <outlet property="address3" destination="85R-gM-28g" id="viq-d6-RLx"/>
+                <outlet property="endMonth1" destination="cRA-3K-wud" id="qgt-bN-6ya"/>
+                <outlet property="endMonth2" destination="XbR-IH-x8D" id="OEQ-ZN-HzY"/>
+                <outlet property="endMonth3" destination="yme-MP-67x" id="zbK-V7-idM"/>
+                <outlet property="money1" destination="TwB-ak-Fd2" id="aAk-89-9LR"/>
+                <outlet property="money2" destination="gUJ-UB-u5Z" id="mXQ-4h-YT9"/>
+                <outlet property="money3" destination="bHU-t6-L9J" id="2ji-qo-FFM"/>
+                <outlet property="position1" destination="Peb-l7-emd" id="7uf-CK-UGN"/>
+                <outlet property="position2" destination="wY4-lG-N6n" id="7RI-Ve-lxg"/>
+                <outlet property="position3" destination="gvS-g4-tt6" id="wvg-df-nVY"/>
+                <outlet property="startMonth1" destination="fEd-4P-A89" id="hc3-rt-c7E"/>
+                <outlet property="startMonth2" destination="jzL-QN-eso" id="jop-sg-rmR"/>
+                <outlet property="startMonth3" destination="9zy-Zo-SbU" id="RWE-dc-ff2"/>
+                <outlet property="unit1" destination="Ppa-sj-A57" id="Qoi-mM-fR1"/>
+                <outlet property="unit2" destination="B78-ty-gyU" id="lhq-t1-q5P"/>
+                <outlet property="unit3" destination="Seo-Tj-CC5" id="wUK-9h-3sk"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -400,6 +418,9 @@
                     <rect key="frame" x="50" y="753.66666666666663" width="293" height="34.333333333333371"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Xong"/>
+                    <connections>
+                        <action selector="doneAction:" destination="-1" eventType="touchUpInside" id="3fR-8m-q8o"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

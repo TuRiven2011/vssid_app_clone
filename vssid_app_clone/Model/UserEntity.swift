@@ -1,9 +1,4 @@
-//
-//  UserEntity.swift
-//  vssid_app_clone
-//
-//  Created by Phạm Bá Tú on 30/09/2023.
-//
+
 
 import Foundation
 
@@ -28,4 +23,28 @@ struct BhytEntity: Codable {
     var registerLocation: String?
     var expiredDate: String?
     var inforBenefit: String?
+}
+
+struct ProgressEntity: Codable {
+    var startMonth1: String?
+    var endMonth1: String?
+    var unit1: String?
+    var position1: String?
+    var money1: String?
+    var address1: String?
+    
+    
+    var startMonth2: String?
+    var endMonth2: String?
+    var unit2: String?
+    var position2: String?
+    var money2: String?
+    var address2: String?
+    
+    var startMonth3: String?
+    var endMonth3: String?
+    var unit3: String?
+    var position3: String?
+    var money3: String?
+    var address3: String?
 }

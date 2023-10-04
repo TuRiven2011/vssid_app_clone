@@ -10,20 +10,20 @@ class TabbarViewController: ESTabBarController {
     var menu: SideMenuNavigationController?
     
     let tab1 = ESTabBarItem(title: "QL cá nhân",
-                            image: UIImage(systemName: "gearshape.fill"),
-                            selectedImage: UIImage(systemName: "gearshape.fill"),
+                            image: UIImage(named: "qlcn"),
+                            selectedImage: UIImage(named: "qlcn"),
                             tag: 0)
     let tab2 = ESTabBarItem(title: "Dịch vụ công",
-                            image: UIImage(systemName: "list.bullet.clipboard"),
-                            selectedImage: UIImage(systemName: "list.bullet.clipboard"),
+                            image: UIImage(named: "dvc"),
+                            selectedImage: UIImage(named: "dvc"),
                             tag: 1)
     let tab3 = ESTabBarItem(title: "Tra cứu",
-                            image: UIImage(systemName: "magnifyingglass"),
-                            selectedImage: UIImage(systemName: "magnifyingglass"),
+                            image: UIImage(named: "haioz"),
+                            selectedImage: UIImage(named: "haioz"),
                             tag: 2)
     let tab4 = ESTabBarItem(title: "Trợ giúp",
-                            image: UIImage(systemName: "headphones"),
-                            selectedImage: UIImage(systemName: "headphones"),
+                            image: UIImage(named: "tt"),
+                            selectedImage: UIImage(named: "tt"),
                             tag: 3)
     
     override func viewDidLoad() {
