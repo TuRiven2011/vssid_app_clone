@@ -52,7 +52,6 @@ class InsuranceInforViewController: UIViewController {
         dateLbl.text = "\(AppData.bhyt?.startDate ?? "") đến \(AppData.bhyt?.endDate ?? "")"
         addressLbl.text = AppData.bhyt?.registerLocation ?? ""
         benefitsInforLbl.text = InsuranceInforEnum.benefit.infor
-        
     }
     
     @objc func didTapStackView(_ gesture: UITapGestureRecognizer) {
