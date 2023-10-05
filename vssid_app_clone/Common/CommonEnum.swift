@@ -128,7 +128,7 @@ enum InsuranceInforEnum {
         case .time:
             return "22/12/2023 đến 22/12/2028"
         case .benefit:
-            return "Được hưởng 80% chi phí khám bệnh, chữa bệnh trong phạm vi được hưởng BHYT \n(áp dụng tỷ lệ thanh toán một số thuốc, hoá chất, vật tư y tế và dịch vụ kỹ thuật theo quy định của Bộ trưởng Bộ Y tế),\nTrong trường hợp điều trị nội trú trái tuyến tại CSKCB tuyến TW sẽ được hưởng 32% (TH trên thẻ có mã nơi sinh sống là K1 hoặc K2 hoặc K3 sẽ được 80%),\nCSKCB tuyến tỉnh sẽ được hưởng 48% (TH trên thẻ có mã nơi sinh sống là K1 hoặc K2 hoặc K3 sẽ được 80%),\ntừ ngày 1/1/2021 sẽ hưởng 80%, CSKCB là bệnh viện tuyến huyện sẽ hưởng 80% Chi phí trong phạm vi hưởng BHYT\n(áp dụng tỷ lệ thanh toán một số thuốc, hoá chất, vật tư y tế và dịch vụ kỹ thuật theo quy định của Bộ trươgr Bộ Y tế)"
+            return "Được hưởng 80% chi phí khám bệnh, chữa bệnh trong phạm vi được hưởng BHYT \n(áp dụng tỷ lệ thanh toán một số thuốc, hoá chất, vật tư y tế và dịch vụ kỹ thuật theo quy định của Bộ trưởng Bộ Y tế),\nTrong trường hợp điều trị nội trú trái tuyến tại CSKCB tuyến TW sẽ được hưởng 32% (TH trên thẻ có mã nơi sinh sống là K1 hoặc K2 hoặc K3 sẽ được 80%),\nCSKCB tuyến tỉnh sẽ được hưởng 48% (TH trên thẻ có mã nơi sinh sống là K1 hoặc K2 hoặc K3 sẽ được 80%),\ntừ ngày 1/1/2021 sẽ hưởng 80%, CSKCB là bệnh viện tuyến huyện sẽ hưởng 80% Chi phí trong phạm vi hưởng BHYT\n(áp dụng tỷ lệ thanh toán một số thuốc, hoá chất, vật tư y tế và dịch vụ kỹ thuật theo quy định của Bộ trưởng Bộ Y tế)"
         }
     }
 }

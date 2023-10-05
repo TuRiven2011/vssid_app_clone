@@ -13,6 +13,9 @@ struct AppData {
     @StorageObject(key: "progressInfor", defaultValue: nil)
     static var progressInfor: ProgressEntity?
     
+    @StorageObject(key: "BHYT", defaultValue: nil)
+    static var bhyt: BhytEntity?
+    
     
 }
 extension AppData {

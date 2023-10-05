@@ -11,7 +11,7 @@ struct UserEntity: Codable {
     var cccd: String?
     var phone: String?
     var address: String?
-    var bhyt: BhytEntity?
+//    var bhyt: BhytEntity?
 }
 
 struct BhytEntity: Codable {

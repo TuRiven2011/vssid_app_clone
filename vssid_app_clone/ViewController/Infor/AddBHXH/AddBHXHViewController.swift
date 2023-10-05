@@ -25,14 +25,18 @@ class AddBHXHViewController: UIViewController {
         if let vc = navigationController?.viewControllers.first(where: { element in
             return element is LoginViewController
         }) {
-            userEntity?.birth = birth.text
-            userEntity?.bhyt?.expiredDate = end.text
-            userEntity?.bhyt?.registerLocation = location.text
-            userEntity?.bhyt?.startDate = start.text
-            userEntity?.bhyt?.sex = sex.text
-            userEntity?.bhyt?.registerLocation = location.text
             
-            AppData.loginInfor = userEntity
+            var bhyt = BhytEntity()
+            bhyt.birth = birth.text
+            bhyt.expiredDate = end.text
+            bhyt.registerLocation = location.text
+            bhyt.startDate = start.text
+            bhyt.endDate = end.text
+            bhyt.bhytID = bhytID.text
+            bhyt.sex = sex.text
+            bhyt.registerLocation = location.text
+            
+            AppData.bhyt = bhyt
             
             self.navigationController?.popToViewController(vc, animated: true)
         }
