@@ -26,6 +26,8 @@
                 <outlet property="startMonth1" destination="fEd-4P-A89" id="hc3-rt-c7E"/>
                 <outlet property="startMonth2" destination="jzL-QN-eso" id="jop-sg-rmR"/>
                 <outlet property="startMonth3" destination="9zy-Zo-SbU" id="RWE-dc-ff2"/>
+                <outlet property="totalLate" destination="V1S-S4-mEd" id="IqT-yz-PiP"/>
+                <outlet property="totalTime" destination="HAD-5D-bV6" id="ibW-O3-EFp"/>
                 <outlet property="unit1" destination="Ppa-sj-A57" id="Qoi-mM-fR1"/>
                 <outlet property="unit2" destination="B78-ty-gyU" id="lhq-t1-q5P"/>
                 <outlet property="unit3" destination="Seo-Tj-CC5" id="wUK-9h-3sk"/>
@@ -41,10 +43,10 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MNC-uA-4Vt">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="730.5"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="820.5"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="obu-JH-aJW">
-                                    <rect key="frame" x="10" y="30" width="394" height="630"/>
+                                    <rect key="frame" x="10" y="30" width="394" height="720"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ACp-Ug-L9Y">
                                             <rect key="frame" x="0.0" y="0.0" width="394" height="210"/>
@@ -418,10 +420,66 @@
                                                 </view>
                                             </subviews>
                                         </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KAo-3s-l5d">
+                                            <rect key="frame" x="0.0" y="630" width="394" height="90"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GDx-1X-hzS">
+                                                    <rect key="frame" x="0.0" y="0.0" width="394" height="30"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Công ty 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kw6-BL-6Ac">
+                                                            <rect key="frame" x="154.5" y="3" width="85.5" height="24"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="Gxu-SD-n9W"/>
+                                                        <constraint firstItem="Kw6-BL-6Ac" firstAttribute="centerY" secondItem="GDx-1X-hzS" secondAttribute="centerY" id="VgH-7m-Br5"/>
+                                                        <constraint firstItem="Kw6-BL-6Ac" firstAttribute="centerX" secondItem="GDx-1X-hzS" secondAttribute="centerXWithinMargins" id="rnO-an-VPm"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nxP-h6-XFZ">
+                                                    <rect key="frame" x="0.0" y="30" width="394" height="30"/>
+                                                    <subviews>
+                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tổng thời gian tham gia" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HAD-5D-bV6">
+                                                            <rect key="frame" x="20" y="-2" width="354" height="34"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="HAD-5D-bV6" secondAttribute="trailing" constant="20" id="EVI-k5-EIO"/>
+                                                        <constraint firstAttribute="height" constant="30" id="gdh-do-BIj"/>
+                                                        <constraint firstItem="HAD-5D-bV6" firstAttribute="centerY" secondItem="nxP-h6-XFZ" secondAttribute="centerY" id="gvc-be-SM5"/>
+                                                        <constraint firstItem="HAD-5D-bV6" firstAttribute="leading" secondItem="nxP-h6-XFZ" secondAttribute="leading" constant="20" id="vbM-RK-Lk2"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A8v-xA-f5a">
+                                                    <rect key="frame" x="0.0" y="60" width="394" height="30"/>
+                                                    <subviews>
+                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tổng thời gian đóng chậm" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V1S-S4-mEd">
+                                                            <rect key="frame" x="20" y="-2" width="354" height="34"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="V1S-S4-mEd" firstAttribute="leading" secondItem="A8v-xA-f5a" secondAttribute="leading" constant="20" id="6yv-mh-ePg"/>
+                                                        <constraint firstItem="V1S-S4-mEd" firstAttribute="centerY" secondItem="A8v-xA-f5a" secondAttribute="centerY" id="RdF-Zg-IBH"/>
+                                                        <constraint firstAttribute="height" constant="30" id="e1s-F2-Mi4"/>
+                                                        <constraint firstAttribute="trailing" secondItem="V1S-S4-mEd" secondAttribute="trailing" constant="20" id="hqL-yo-qJa"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </stackView>
                                     </subviews>
                                 </stackView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSc-X1-TVg">
-                                    <rect key="frame" x="20" y="676" width="374" height="34.5"/>
+                                    <rect key="frame" x="20" y="766" width="374" height="34.5"/>
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="plain" title="Xong"/>
                                     <connections>

@@ -1,5 +1,3 @@
-
-
 import UIKit
 
 class InsuranceInforViewController: UIViewController {
@@ -47,7 +45,7 @@ class InsuranceInforViewController: UIViewController {
         nameLbl.text = AppData.loginInfor?.name ?? ""
         time.text = AppData.bhyt?.expiredDate ?? ""
         insuranceIdLbl.text = AppData.bhyt?.bhytID ?? ""
-        birdayLbl.text = AppData.loginInfor?.birth ?? ""
+        birdayLbl.text = AppData.bhyt?.birth ?? ""
         sex.text = AppData.bhyt?.sex ?? ""
         dateLbl.text = "\(AppData.bhyt?.startDate ?? "") đến \(AppData.bhyt?.endDate ?? "")"
         addressLbl.text = AppData.bhyt?.registerLocation ?? ""

@@ -28,15 +28,15 @@ enum HelpEnum {
         case .userManual:
             return .init(named: "ho-trohdsd") ?? .init()
         case .chatBot:
-            return .init(named: "ho-trohdsd") ?? .init()
+            return .init(named: "new_icon_chatbot") ?? .init()
         case .hotline:
-            return .init(named: "ho-trohdsd") ?? .init()
+            return .init(named: "new_icon_tongdai") ?? .init()
         case .email:
-            return .init(named: "ho-trohdsd") ?? .init()
+            return .init(named: "new_icon_email") ?? .init()
         case .question:
-            return .init(named: "ho-trohdsd") ?? .init()
+            return .init(named: "new_icon_cauhoi") ?? .init()
         case .request:
-            return .init(named: "ho-trohdsd") ?? .init()
+            return .init(named: "phananhkiennghi") ?? .init()
         }
     }
 }

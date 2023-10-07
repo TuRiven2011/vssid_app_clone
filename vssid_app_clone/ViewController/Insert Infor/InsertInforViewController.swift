@@ -17,7 +17,9 @@ class InsertInforViewController: UIViewController {
     @IBOutlet weak var money1: UITextField!
     @IBOutlet weak var address1: UITextField!
     
+    @IBOutlet weak var totalLate: UITextField!
     
+    @IBOutlet weak var totalTime: UITextField!
     @IBOutlet weak var startMonth2: UITextField!
     @IBOutlet weak var endMonth2: UITextField!
     @IBOutlet weak var unit2: UITextField!
@@ -36,7 +38,7 @@ class InsertInforViewController: UIViewController {
     @IBAction func doneAction(_ sender: Any) {
         
         var progress = ProgressEntity()
-        progress.address1 = startMonth1.text
+        progress.startMonth1 = startMonth1.text
         progress.endMonth1 = endMonth1.text
         progress.unit1 = unit1.text
         progress.position1 = position1.text
@@ -54,6 +56,9 @@ class InsertInforViewController: UIViewController {
         progress.position3 = position3.text
         progress.money3 = money3.text
         progress.address3 = address3.text
+        
+        progress.totalLate = totalLate.text
+        progress.totalTime = totalTime.text
         
         AppData.progressInfor = progress
 //        AppData.progressInfor = .init(startMonth1: startMonth1.text,

@@ -37,6 +37,27 @@ class TabbarViewController: ESTabBarController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillLayoutSubviews() {
+            super.viewWillLayoutSubviews()
+
+            let newTabBarHeight = 40 + 16.0
+
+            var newFrame = tabBar.frame
+            newFrame.size.height = newTabBarHeight
+            newFrame.origin.y = view.frame.size.height - newTabBarHeight
+
+            tabBar.frame = newFrame
+        }
+    
+    
+    
+//    override func viewWillLayoutSubviews() {
+//        super.viewWillLayoutSubviews()
+//
+//        tabBar.frame.size.height = 200
+//        tabBar.frame.origin.y = view.frame.height - 200
+//    }
+    
     private func addListenerShowSideMenu() {
         NotificationCenter.default.addObserver(self, selector: #selector(showSideMenu(_ :)), name: .SHOW_SIDE_MENU, object: nil)
     }

@@ -52,13 +52,12 @@ class InforViewController: UIViewController {
     }
     
     private func configUI() {
-        profileImage.image = UIImage(named: listData[0].infor)
         nameLbl.text = AppData.loginInfor?.name
         insuranceIdLbl.text = AppData.loginInfor?.bhxhID
         cccdLbl.text = AppData.loginInfor?.cccd
         phoneLbl.text = AppData.loginInfor?.phone
         addressLbl.text = AppData.loginInfor?.address
-        birdayLbl.text = AppData.loginInfor?.birth
+        birdayLbl.text = AppData.bhyt?.birth
     }
     
     private func setupNavigationBar(title: String) {

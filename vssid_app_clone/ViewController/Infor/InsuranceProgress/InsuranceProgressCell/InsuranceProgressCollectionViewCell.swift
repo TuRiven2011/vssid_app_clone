@@ -4,6 +4,7 @@ import UIKit
 
 class InsuranceProgressCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var lateTime: UILabel!
     @IBOutlet weak var eye3: UIView!
     @IBOutlet weak var eye2: UIView!
     @IBOutlet weak var eye1: UIView!
@@ -49,7 +50,9 @@ class InsuranceProgressCollectionViewCell: UICollectionViewCell {
         endMonth3.text = AppData.progressInfor?.endMonth3
         name3.text = AppData.progressInfor?.unit3
         position3.text = AppData.progressInfor?.position3
+        totalTime.text = "Tổng thời gian tham gia: \(AppData.progressInfor?.totalTime ?? "") tháng"
         
+        lateTime.text = "Tổng thời gian chậm đóng: \(AppData.progressInfor?.totalLate ?? "") tháng"
         
         contentStackView.layer.borderWidth = 1
         contentStackView.layer.borderColor = UIColor(rgb: 0xFF446699).cgColor

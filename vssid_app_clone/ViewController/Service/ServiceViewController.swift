@@ -110,9 +110,9 @@ class ServiceViewController: UIViewController {
         if view == serviceView {
             for sub in serviceView.subviews {
                 if let sub = sub as? UILabel {
-                    sub.textColor = .blue
+                    sub.textColor = UIColor(rgb: 0xFF2B65AC)
                 } else {
-                    sub.tintColor = .blue
+                    sub.tintColor = UIColor(rgb: 0xFF2B65AC)
                 }
             }
             for sub in historyView.subviews {
@@ -133,9 +133,9 @@ class ServiceViewController: UIViewController {
             }
             for sub in historyView.subviews {
                 if let sub = sub as? UILabel {
-                    sub.textColor = .blue
+                    sub.textColor = UIColor(rgb: 0xFF2B65AC)
                 } else {
-                    sub.tintColor = .blue
+                    sub.tintColor = UIColor(rgb: 0xFF2B65AC)
                 }
             }
         }

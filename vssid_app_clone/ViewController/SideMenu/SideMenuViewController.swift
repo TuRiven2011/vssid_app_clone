@@ -34,9 +34,9 @@ class SideMenuViewController: UIViewController {
         dividerView.layer.shadowOffset = CGSize(width: 0, height: 1)
         dividerView.layer.shadowRadius = 2
         
-        nameLabel.text = AppData.loginInfor?.userName
+        nameLabel.text = AppData.loginInfor?.name
         
-        idLabel.text = AppData.loginInfor?.password
+        idLabel.text = AppData.loginInfor?.bhxhID
         let gradient = CAGradientLayer()
         
         gradient.frame = view.bounds
@@ -49,6 +49,8 @@ class SideMenuViewController: UIViewController {
         
         menuTableView.register(.init(nibName: "ItemSideMenuTableViewCell",
                                      bundle: nil), forCellReuseIdentifier: "ItemSideMenuTableViewCell")
+        menuTableView.register(.init(nibName: "VersionTableViewCell",
+                                     bundle: nil), forCellReuseIdentifier: "VersionTableViewCell")
         menuTableView.delegate = self
         menuTableView.dataSource = self
         menuTableView.tableHeaderView = .init(frame: .zero)
@@ -62,26 +64,38 @@ class SideMenuViewController: UIViewController {
 
 extension SideMenuViewController: UITableViewDataSource, UITableViewDelegate {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 3
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if(section == 0) {
             return section1.count
-        } else {
+        } else if section == 1 {
             return section2.count
+        } else {
+            return 1
         }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ItemSideMenuTableViewCell", for: indexPath) as? ItemSideMenuTableViewCell else {return .init()}
-        cell.selectionStyle = .none
-        indexPath.section == 0 ? cell.binding(data: section1[indexPath.row]) : cell.binding(data: section2[indexPath.row])
-        return cell
+        if indexPath.section == 2 {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "VersionTableViewCell", for: indexPath) as? VersionTableViewCell else {return .init()}
+            cell.selectionStyle = .none
+            return cell
+        } else {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "ItemSideMenuTableViewCell", for: indexPath) as? ItemSideMenuTableViewCell else {return .init()}
+            cell.selectionStyle = .none
+            indexPath.section == 0 ? cell.binding(data: section1[indexPath.row]) : cell.binding(data: section2[indexPath.row])
+            return cell
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 54
+        if indexPath.section == 2 {
+            return UITableView.automaticDimension
+        } else {
+            return 54
+        }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -134,7 +148,7 @@ extension SideMenuViewController: UITableViewDataSource, UITableViewDelegate {
             default:
                 break
             }
-        } else {
+        } else if indexPath.row == 1 {
             switch section2[indexPath.row] {
             case .changePassword:
                 let vc = ChangePasswordViewController()
@@ -144,6 +158,8 @@ extension SideMenuViewController: UITableViewDataSource, UITableViewDelegate {
             default:
                 break
             }
+        } else {
+            
         }
     }
     

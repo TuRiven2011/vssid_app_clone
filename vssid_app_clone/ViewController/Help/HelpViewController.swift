@@ -154,6 +154,8 @@ extension HelpViewController: UITableViewDataSource, UITableViewDelegate {
         case .email:
             sendEmail()
         case .question:
+            let vc = CommonQuestionViewController()
+            navigationController?.pushViewController(vc, animated: true)
             break
         case .request:
             CommonUtils.shared.openURL(urlString: "https://baohiemxahoi.gov.vn/chuyen-trang-bhxh-bhyt-va-phan-anh-kien-nghi/Pages/default.aspx")
@@ -161,7 +163,7 @@ extension HelpViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 90
+        return 80
     }
     
     

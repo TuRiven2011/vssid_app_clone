@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4702628F2AD0FE7F00A5A857 /* VersionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4702628D2AD0FE7F00A5A857 /* VersionTableViewCell.swift */; };
+		470262902AD0FE7F00A5A857 /* VersionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4702628E2AD0FE7F00A5A857 /* VersionTableViewCell.xib */; };
 		47108DC12AC887BC00F81F43 /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47108DC02AC887BC00F81F43 /* UserEntity.swift */; };
 		47108DC52AC9579400F81F43 /* DetailInsuranceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47108DC32AC9579400F81F43 /* DetailInsuranceViewController.swift */; };
 		47108DC62AC9579400F81F43 /* DetailInsuranceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47108DC42AC9579400F81F43 /* DetailInsuranceViewController.xib */; };
@@ -101,6 +103,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4702628D2AD0FE7F00A5A857 /* VersionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionTableViewCell.swift; sourceTree = "<group>"; };
+		4702628E2AD0FE7F00A5A857 /* VersionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VersionTableViewCell.xib; sourceTree = "<group>"; };
 		47108DC02AC887BC00F81F43 /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
 		47108DC32AC9579400F81F43 /* DetailInsuranceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInsuranceViewController.swift; sourceTree = "<group>"; };
 		47108DC42AC9579400F81F43 /* DetailInsuranceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailInsuranceViewController.xib; sourceTree = "<group>"; };
@@ -224,6 +228,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		4702628C2AD0FE6800A5A857 /* Version */ = {
+			isa = PBXGroup;
+			children = (
+				4702628D2AD0FE7F00A5A857 /* VersionTableViewCell.swift */,
+				4702628E2AD0FE7F00A5A857 /* VersionTableViewCell.xib */,
+			);
+			path = Version;
+			sourceTree = "<group>";
+		};
 		47108DC22AC9577F00F81F43 /* DetailInsurance */ = {
 			isa = PBXGroup;
 			children = (
@@ -271,6 +284,7 @@
 		4784B9D52AC4ADB2003A2C07 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				4702628C2AD0FE6800A5A857 /* Version */,
 				4784B9D62AC4ADD9003A2C07 /* ItemSideMenuTableViewCell.swift */,
 				4784B9D72AC4ADD9003A2C07 /* ItemSideMenuTableViewCell.xib */,
 			);
@@ -762,6 +776,7 @@
 				822E18982AC1C12900C35308 /* UseCardViewController.xib in Resources */,
 				822E18892AC1333700C35308 /* ServiceViewController.xib in Resources */,
 				47D3781C2AC07E52008759D4 /* LoginViewController.xib in Resources */,
+				470262902AD0FE7F00A5A857 /* VersionTableViewCell.xib in Resources */,
 				825666A92AC6664400AED104 /* ListNotiViewController.xib in Resources */,
 				825666A42AC5D98200AED104 /* CreatAccountViewController.xib in Resources */,
 				825666B02AC680FC00AED104 /* ServiceCollectionViewCell.xib in Resources */,
@@ -862,6 +877,7 @@
 				4784B9DB2AC54F27003A2C07 /* Storage.swift in Sources */,
 				47108DD82AC973A100F81F43 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				4784B9CE2AC34FF6003A2C07 /* CommonUtils.swift in Sources */,
+				4702628F2AD0FE7F00A5A857 /* VersionTableViewCell.swift in Sources */,
 				47D378222AC07E52008759D4 /* CommonEnum.swift in Sources */,
 				822E189C2AC1C79B00C35308 /* InsuranceExampleViewController.swift in Sources */,
 				82EB8B622AC359D900ADB2D4 /* CommonQuestionTableViewCell.swift in Sources */,
@@ -1052,6 +1068,7 @@
 				DEVELOPMENT_TEAM = G2KXX7Y4LG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = vssid_app_clone/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = VssID;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -1087,6 +1104,7 @@
 				DEVELOPMENT_TEAM = G2KXX7Y4LG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = vssid_app_clone/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = VssID;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

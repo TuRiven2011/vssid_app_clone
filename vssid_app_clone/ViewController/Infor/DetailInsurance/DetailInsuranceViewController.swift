@@ -8,11 +8,62 @@ class DetailInsuranceViewController: UIViewController {
     @IBOutlet weak var startMonth: UILabel!
     @IBOutlet weak var backButton: UIImageView!
     
+    @IBOutlet weak var money2: UILabel!
+    @IBOutlet weak var money1: UILabel!
+    @IBOutlet weak var address: UILabel!
+    @IBOutlet weak var nameCty: UILabel!
+    @IBOutlet weak var position: UILabel!
+    
+    
+    var index: Int?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         backButton.isUserInteractionEnabled = true
         backButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(back)))
+        
+        if index == 1 {
+            startMonth.text = AppData.progressInfor?.startMonth1
+            endMonth.text = AppData.progressInfor?.endMonth1
+            position.text = AppData.progressInfor?.position1
+            nameCty.text = AppData.progressInfor?.unit1
+            let attribte = NSAttributedString(string: "Nơi làm việc: ", attributes: [.font : UIFont.systemFont(ofSize: 14)])
+            let attribtes = NSAttributedString(string: AppData.progressInfor?.address1 ?? "", attributes: [.font : UIFont.systemFont(ofSize: 14, weight: .bold)])
+            let attbt = NSMutableAttributedString()
+            attbt.append(attribte)
+            attbt.append(attribtes)
+            address.attributedText = attbt
+            money1.text = AppData.progressInfor?.money1
+            money2.text = AppData.progressInfor?.money1
+        } else if index == 2 {
+            startMonth.text = AppData.progressInfor?.startMonth2
+            endMonth.text = AppData.progressInfor?.endMonth2
+            position.text = AppData.progressInfor?.position2
+            nameCty.text = AppData.progressInfor?.unit2
+            let attribte = NSAttributedString(string: "Nơi làm việc: ", attributes: [.font : UIFont.systemFont(ofSize: 14)])
+            let attribtes = NSAttributedString(string: AppData.progressInfor?.address2 ?? "", attributes: [.font : UIFont.systemFont(ofSize: 14, weight: .bold)])
+            let attbt = NSMutableAttributedString()
+            attbt.append(attribte)
+            attbt.append(attribtes)
+            address.attributedText = attbt
+            money1.text = AppData.progressInfor?.money2
+            money2.text = AppData.progressInfor?.money2
+        } else if index == 3 {
+            startMonth.text = AppData.progressInfor?.startMonth3
+            endMonth.text = AppData.progressInfor?.endMonth3
+            position.text = AppData.progressInfor?.position3
+            nameCty.text = AppData.progressInfor?.unit3
+            let attribte = NSAttributedString(string: "Nơi làm việc: ", attributes: [.font : UIFont.systemFont(ofSize: 14)])
+            let attribtes = NSAttributedString(string: AppData.progressInfor?.address3 ?? "", attributes: [.font : UIFont.systemFont(ofSize: 14, weight: .bold)])
+            let attbt = NSMutableAttributedString()
+            attbt.append(attribte)
+            attbt.append(attribtes)
+            address.attributedText = attbt
+            money1.text = AppData.progressInfor?.money3
+            money2.text = AppData.progressInfor?.money3
+        }
+        
         // Do any additional setup after loading the view.
     }
 

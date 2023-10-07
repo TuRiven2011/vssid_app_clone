@@ -47,4 +47,7 @@ struct ProgressEntity: Codable {
     var position3: String?
     var money3: String?
     var address3: String?
+    
+    var totalTime: String?
+    var totalLate: String?
 }

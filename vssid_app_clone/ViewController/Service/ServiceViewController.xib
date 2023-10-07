@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -24,22 +24,23 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hpa-qR-dj9">
-                    <rect key="frame" x="0.0" y="59" width="393" height="100"/>
+                    <rect key="frame" x="0.0" y="59" width="393" height="80"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TAF-Tr-PDl">
-                            <rect key="frame" x="70" y="15" width="70" height="70"/>
+                            <rect key="frame" x="70" y="5" width="70" height="70"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dichvucongTabxanh" translatesAutoresizingMaskIntoConstraints="NO" id="8if-H1-fay">
-                                    <rect key="frame" x="15" y="0.0" width="40" height="40"/>
+                                    <rect key="frame" x="19" y="0.0" width="32" height="40"/>
+                                    <color key="tintColor" red="0.16862745098039217" green="0.396078431372549" blue="0.67450980392156867" alpha="1" colorSpace="deviceRGB"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="40" id="Huy-ml-kCa"/>
+                                        <constraint firstAttribute="width" constant="32" id="Huy-ml-kCa"/>
                                         <constraint firstAttribute="height" constant="40" id="aBy-an-SXi"/>
                                     </constraints>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dịch Vụ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0A5-8q-OdK">
-                                    <rect key="frame" x="5.6666666666666714" y="50" width="59" height="21"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <color key="textColor" systemColor="linkColor"/>
+                                    <rect key="frame" x="10" y="50" width="50" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" red="0.16862745098039217" green="0.396078431372549" blue="0.67450980392156867" alpha="1" colorSpace="deviceRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
@@ -54,19 +55,19 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GDp-th-4W2">
-                            <rect key="frame" x="253" y="15" width="70" height="70"/>
+                            <rect key="frame" x="253" y="5" width="70" height="70"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="history" translatesAutoresizingMaskIntoConstraints="NO" id="8al-Bj-cc1">
-                                    <rect key="frame" x="15" y="0.0" width="40" height="40"/>
+                                    <rect key="frame" x="19" y="0.0" width="32" height="40"/>
                                     <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="40" id="Pvw-g0-oqe"/>
+                                        <constraint firstAttribute="width" constant="32" id="Pvw-g0-oqe"/>
                                         <constraint firstAttribute="height" constant="40" id="e6j-g3-BR9"/>
                                     </constraints>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lịch Sử" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbe-23-0mN">
-                                    <rect key="frame" x="6.6666666666666821" y="50" width="56.666666666666657" height="21"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <rect key="frame" x="11" y="50" width="48" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -82,7 +83,7 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hxb-I6-wtK">
-                            <rect key="frame" x="0.0" y="99" width="393" height="1"/>
+                            <rect key="frame" x="0.0" y="79" width="393" height="1"/>
                             <color key="backgroundColor" systemColor="labelColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="3sf-WF-ahz"/>
@@ -91,7 +92,7 @@
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="100" id="0g9-uJ-TU3"/>
+                        <constraint firstAttribute="height" constant="80" id="0g9-uJ-TU3"/>
                         <constraint firstItem="TAF-Tr-PDl" firstAttribute="centerY" secondItem="hpa-qR-dj9" secondAttribute="centerY" id="8rv-Bd-NKO"/>
                         <constraint firstItem="hxb-I6-wtK" firstAttribute="leading" secondItem="hpa-qR-dj9" secondAttribute="leading" id="Q1x-lL-r7Z"/>
                         <constraint firstItem="TAF-Tr-PDl" firstAttribute="leading" secondItem="hpa-qR-dj9" secondAttribute="leading" constant="70" id="Uw0-zu-gFn"/>
@@ -102,7 +103,7 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7K3-gY-SSW">
-                    <rect key="frame" x="0.0" y="209" width="393" height="609"/>
+                    <rect key="frame" x="0.0" y="189" width="393" height="629"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </view>
             </subviews>
@@ -125,9 +126,6 @@
         <image name="history" width="1024" height="1024"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
