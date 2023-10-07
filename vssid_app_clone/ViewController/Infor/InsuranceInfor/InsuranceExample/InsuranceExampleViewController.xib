@@ -43,9 +43,9 @@
                     </constraints>
                 </imageView>
                 <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0zP-Nw-w8h">
-                    <rect key="frame" x="31.666666666666657" y="221.66666666666669" width="330" height="516.33333333333326"/>
+                    <rect key="frame" x="41.666666666666657" y="283" width="310" height="485"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="330" id="M8b-xp-srV"/>
+                        <constraint firstAttribute="width" constant="310" id="M8b-xp-srV"/>
                         <constraint firstAttribute="width" secondItem="0zP-Nw-w8h" secondAttribute="height" multiplier="918:1436" id="T4p-hh-4y7"/>
                     </constraints>
                 </imageView>
@@ -55,7 +55,7 @@
             <constraints>
                 <constraint firstItem="0zP-Nw-w8h" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0HA-14-LA0"/>
                 <constraint firstItem="u37-ig-NfL" firstAttribute="top" secondItem="S7P-WE-ksK" secondAttribute="bottom" constant="30" id="5GJ-5D-jYM"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="0zP-Nw-w8h" secondAttribute="bottom" constant="80" id="Ee3-SX-tTE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="0zP-Nw-w8h" secondAttribute="bottom" constant="50" id="Ee3-SX-tTE"/>
                 <constraint firstItem="S7P-WE-ksK" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="IrD-78-omV"/>
                 <constraint firstItem="LcN-QE-QYU" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="YCE-rs-Yrh"/>
                 <constraint firstItem="LcN-QE-QYU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="25" id="Yy0-wy-bi1"/>
