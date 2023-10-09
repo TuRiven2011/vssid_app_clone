@@ -1,10 +1,3 @@
-//
-//  VersionTableViewCell.swift
-//  vssid_app_clone
-//
-//  Created by Phạm Bá Tú on 07/10/2023.
-//
-
 import UIKit
 
 class VersionTableViewCell: UITableViewCell {
