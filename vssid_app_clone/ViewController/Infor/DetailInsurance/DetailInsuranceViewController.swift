@@ -27,26 +27,39 @@ class DetailInsuranceViewController: UIViewController {
             startMonth.text = AppData.progressInfor?.startMonth1
             endMonth.text = AppData.progressInfor?.endMonth1
             position.text = AppData.progressInfor?.position1
-            nameCty.text = AppData.progressInfor?.unit1
             let attribte = NSAttributedString(string: "Nơi làm việc: ", attributes: [.font : UIFont.systemFont(ofSize: 14)])
             let attribtes = NSAttributedString(string: AppData.progressInfor?.address1 ?? "", attributes: [.font : UIFont.systemFont(ofSize: 14, weight: .bold)])
             let attbt = NSMutableAttributedString()
             attbt.append(attribte)
             attbt.append(attribtes)
             address.attributedText = attbt
+            
+            let attribteCty = NSAttributedString(string: "Đơn vị công tác: ", attributes: [.font : UIFont.systemFont(ofSize: 14)])
+            let attribtesCty = NSAttributedString(string: AppData.progressInfor?.unit1 ?? "", attributes: [.font : UIFont.systemFont(ofSize: 14, weight: .bold)])
+            let attbtCty = NSMutableAttributedString()
+            attbtCty.append(attribteCty)
+            attbtCty.append(attribtesCty)
+            nameCty.attributedText = attbtCty
+            
             money1.text = AppData.progressInfor?.money1
             money2.text = AppData.progressInfor?.money1
         } else if index == 2 {
             startMonth.text = AppData.progressInfor?.startMonth2
             endMonth.text = AppData.progressInfor?.endMonth2
             position.text = AppData.progressInfor?.position2
-            nameCty.text = AppData.progressInfor?.unit2
             let attribte = NSAttributedString(string: "Nơi làm việc: ", attributes: [.font : UIFont.systemFont(ofSize: 14)])
             let attribtes = NSAttributedString(string: AppData.progressInfor?.address2 ?? "", attributes: [.font : UIFont.systemFont(ofSize: 14, weight: .bold)])
             let attbt = NSMutableAttributedString()
             attbt.append(attribte)
             attbt.append(attribtes)
             address.attributedText = attbt
+            
+            let attribteCty = NSAttributedString(string: "Đơn vị công tác: ", attributes: [.font : UIFont.systemFont(ofSize: 14)])
+            let attribtesCty = NSAttributedString(string: AppData.progressInfor?.unit2 ?? "", attributes: [.font : UIFont.systemFont(ofSize: 14, weight: .bold)])
+            let attbtCty = NSMutableAttributedString()
+            attbtCty.append(attribteCty)
+            attbtCty.append(attribtesCty)
+            nameCty.attributedText = attbtCty
             money1.text = AppData.progressInfor?.money2
             money2.text = AppData.progressInfor?.money2
         } else if index == 3 {
@@ -60,6 +73,14 @@ class DetailInsuranceViewController: UIViewController {
             attbt.append(attribte)
             attbt.append(attribtes)
             address.attributedText = attbt
+            
+            let attribteCty = NSAttributedString(string: "Đơn vị công tác: ", attributes: [.font : UIFont.systemFont(ofSize: 14)])
+            let attribtesCty = NSAttributedString(string: AppData.progressInfor?.unit2 ?? "", attributes: [.font : UIFont.systemFont(ofSize: 14, weight: .bold)])
+            let attbtCty = NSMutableAttributedString()
+            attbtCty.append(attribteCty)
+            attbtCty.append(attribtesCty)
+            nameCty.attributedText = attbtCty
+            
             money1.text = AppData.progressInfor?.money3
             money2.text = AppData.progressInfor?.money3
         }
