@@ -4,6 +4,7 @@ import UIKit
 
 class AddBHXHViewController: UIViewController {
 
+    @IBOutlet weak var fiveYearTF: UITextField!
     @IBOutlet weak var end: UITextField!
     @IBOutlet weak var start: UITextField!
     @IBOutlet weak var location: UITextField!
@@ -35,6 +36,7 @@ class AddBHXHViewController: UIViewController {
             bhyt.bhytID = bhytID.text
             bhyt.sex = sex.text
             bhyt.registerLocation = location.text
+            bhyt.fiveYear = fiveYearTF.text
             
             AppData.bhyt = bhyt
             

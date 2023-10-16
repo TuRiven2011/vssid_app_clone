@@ -23,6 +23,7 @@ struct BhytEntity: Codable {
     var registerLocation: String?
     var expiredDate: String?
     var inforBenefit: String?
+    var fiveYear: String?
 }
 
 struct ProgressEntity: Codable {

@@ -43,7 +43,7 @@ class InsuranceInforViewController: UIViewController {
     func binding() {
         profileImage.image = UIImage(named: listData[0].infor)
         nameLbl.text = AppData.loginInfor?.name ?? ""
-        time.text = AppData.bhyt?.expiredDate ?? ""
+        time.text = AppData.bhyt?.fiveYear ?? ""
         insuranceIdLbl.text = AppData.bhyt?.bhytID ?? ""
         birdayLbl.text = AppData.bhyt?.birth ?? ""
         sex.text = AppData.bhyt?.sex ?? ""

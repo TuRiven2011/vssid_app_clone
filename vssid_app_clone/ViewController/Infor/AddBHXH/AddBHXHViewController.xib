@@ -14,6 +14,7 @@
                 <outlet property="bhytID" destination="HD3-4J-jSX" id="o1T-az-4aV"/>
                 <outlet property="birth" destination="Oj2-h8-D5W" id="pfZ-sm-Pfw"/>
                 <outlet property="end" destination="R3k-FU-KhF" id="f9g-ts-azp"/>
+                <outlet property="fiveYearTF" destination="8u3-m3-gGq" id="7OB-2H-LHR"/>
                 <outlet property="location" destination="0Vw-A8-dkx" id="Brs-na-bIY"/>
                 <outlet property="sex" destination="HlP-Mf-hTo" id="hYX-CO-XYG"/>
                 <outlet property="start" destination="HFK-2u-MlV" id="X3Q-4P-vdh"/>
@@ -26,7 +27,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="vok-Pe-goW">
-                    <rect key="frame" x="20" y="79" width="353" height="344"/>
+                    <rect key="frame" x="20" y="79" width="353" height="404"/>
                     <subviews>
                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ngày sinh" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oj2-h8-D5W">
                             <rect key="frame" x="0.0" y="0.0" width="353" height="44"/>
@@ -72,6 +73,14 @@
                             <rect key="frame" x="0.0" y="300" width="353" height="44"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="44" id="uqO-fd-209"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Thời điểm 5 năm liên tục" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8u3-m3-gGq">
+                            <rect key="frame" x="0.0" y="360" width="353" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="LGt-1n-HBg"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
