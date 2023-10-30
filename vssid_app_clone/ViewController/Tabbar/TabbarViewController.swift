@@ -72,6 +72,10 @@ class TabbarViewController: ESTabBarController {
         menu = .init(rootViewController: SideMenuViewController())
         menu?.menuWidth = SCREEN_WIDTH - 100
         menu?.leftSide = true
+        menu?.presentationStyle = .menuSlideIn
+        menu?.modalPresentationStyle = .overCurrentContext
+        menu?.modalTransitionStyle = .crossDissolve
+
         SideMenuManager.default.leftMenuNavigationController = menu
         SideMenuManager.default.addPanGestureToPresent(toView: self.view)
     }
