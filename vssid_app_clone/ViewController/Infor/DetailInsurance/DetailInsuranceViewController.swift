@@ -75,7 +75,7 @@ class DetailInsuranceViewController: UIViewController {
             address.attributedText = attbt
             
             let attribteCty = NSAttributedString(string: "Đơn vị công tác: ", attributes: [.font : UIFont.systemFont(ofSize: 14)])
-            let attribtesCty = NSAttributedString(string: AppData.progressInfor?.unit2 ?? "", attributes: [.font : UIFont.systemFont(ofSize: 14, weight: .bold)])
+            let attribtesCty = NSAttributedString(string: AppData.progressInfor?.unit3 ?? "", attributes: [.font : UIFont.systemFont(ofSize: 14, weight: .bold)])
             let attbtCty = NSMutableAttributedString()
             attbtCty.append(attribteCty)
             attbtCty.append(attribtesCty)

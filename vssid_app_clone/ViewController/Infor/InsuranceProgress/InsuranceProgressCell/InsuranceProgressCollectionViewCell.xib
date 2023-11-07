@@ -184,7 +184,7 @@
                                                 <rect key="frame" x="155" y="0.0" width="137.66666666666663" height="50"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Công ty CP Nam" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mp4-hq-gS0">
-                                                        <rect key="frame" x="5.0000000000000071" y="0.0" width="127.66666666666669" height="50"/>
+                                                        <rect key="frame" x="5.0000000000000071" y="5" width="127.66666666666669" height="40"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -192,9 +192,9 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstItem="Mp4-hq-gS0" firstAttribute="top" secondItem="M0R-Cp-Y36" secondAttribute="top" id="5ZK-TY-onM"/>
+                                                    <constraint firstItem="Mp4-hq-gS0" firstAttribute="top" secondItem="M0R-Cp-Y36" secondAttribute="top" constant="5" id="5ZK-TY-onM"/>
                                                     <constraint firstItem="Mp4-hq-gS0" firstAttribute="leading" secondItem="M0R-Cp-Y36" secondAttribute="leading" constant="5" id="VRa-Sb-lN0"/>
-                                                    <constraint firstAttribute="bottom" secondItem="Mp4-hq-gS0" secondAttribute="bottom" id="eTG-Y0-SXx"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Mp4-hq-gS0" secondAttribute="bottom" constant="5" id="eTG-Y0-SXx"/>
                                                     <constraint firstAttribute="trailing" secondItem="Mp4-hq-gS0" secondAttribute="trailing" constant="5" id="ofC-Hp-syH"/>
                                                 </constraints>
                                             </view>
@@ -289,7 +289,7 @@
                                                 <rect key="frame" x="155" y="0.0" width="137.66666666666663" height="50"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Công ty Tư Nhân" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pz9-CM-hgA">
-                                                        <rect key="frame" x="5.0000000000000071" y="0.0" width="127.66666666666669" height="50"/>
+                                                        <rect key="frame" x="5.0000000000000071" y="5" width="127.66666666666669" height="40"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -297,9 +297,9 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstItem="Pz9-CM-hgA" firstAttribute="top" secondItem="12d-A9-o59" secondAttribute="top" id="XvQ-dB-Auo"/>
+                                                    <constraint firstItem="Pz9-CM-hgA" firstAttribute="top" secondItem="12d-A9-o59" secondAttribute="top" constant="5" id="XvQ-dB-Auo"/>
                                                     <constraint firstItem="Pz9-CM-hgA" firstAttribute="leading" secondItem="12d-A9-o59" secondAttribute="leading" constant="5" id="bMQ-Ne-f8U"/>
-                                                    <constraint firstAttribute="bottom" secondItem="Pz9-CM-hgA" secondAttribute="bottom" id="bYg-DI-6CH"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Pz9-CM-hgA" secondAttribute="bottom" constant="5" id="bYg-DI-6CH"/>
                                                     <constraint firstAttribute="trailing" secondItem="Pz9-CM-hgA" secondAttribute="trailing" constant="5" id="ga5-M1-xwe"/>
                                                 </constraints>
                                             </view>
@@ -394,7 +394,7 @@
                                                 <rect key="frame" x="155" y="0.0" width="137.66666666666663" height="50"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Công Ty BDS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QvR-0U-4iB">
-                                                        <rect key="frame" x="5.0000000000000071" y="0.0" width="127.66666666666669" height="50"/>
+                                                        <rect key="frame" x="5.0000000000000071" y="5" width="127.66666666666669" height="40"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -402,10 +402,10 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="bottom" secondItem="QvR-0U-4iB" secondAttribute="bottom" id="B4k-Z5-0Iz"/>
+                                                    <constraint firstAttribute="bottom" secondItem="QvR-0U-4iB" secondAttribute="bottom" constant="5" id="B4k-Z5-0Iz"/>
                                                     <constraint firstItem="QvR-0U-4iB" firstAttribute="leading" secondItem="pqn-Jt-plN" secondAttribute="leading" constant="5" id="RNA-Kq-5Tz"/>
                                                     <constraint firstAttribute="trailing" secondItem="QvR-0U-4iB" secondAttribute="trailing" constant="5" id="rnL-C1-MBG"/>
-                                                    <constraint firstItem="QvR-0U-4iB" firstAttribute="top" secondItem="pqn-Jt-plN" secondAttribute="top" id="rny-Ma-6j6"/>
+                                                    <constraint firstItem="QvR-0U-4iB" firstAttribute="top" secondItem="pqn-Jt-plN" secondAttribute="top" constant="5" id="rny-Ma-6j6"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B2n-n3-48E">
