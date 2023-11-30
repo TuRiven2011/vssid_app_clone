@@ -2,7 +2,7 @@
 
 import UIKit
 
-class InforViewController: UIViewController {
+class InforViewController: UIViewController, UIGestureRecognizerDelegate {
 
     @IBOutlet weak var cccdLbl: UILabel!
     
@@ -32,9 +32,17 @@ class InforViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
         setupNavigationBar(title: "Quản lý cá nhân".uppercased())
         configUI()
         configTableView()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true;
+
     }
     
     override func viewWillAppear(_ animated: Bool) {

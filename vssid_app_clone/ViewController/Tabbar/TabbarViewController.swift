@@ -77,7 +77,8 @@ class TabbarViewController: ESTabBarController {
         menu?.modalTransitionStyle = .crossDissolve
 
         SideMenuManager.default.leftMenuNavigationController = menu
-        SideMenuManager.default.addPanGestureToPresent(toView: self.view)
+//        SideMenuManager.default.addPanGestureToPresent(toView: self.view)
+        SideMenuManager.default.enableSwipeGestures = false
     }
     
     private func configUI() {
@@ -104,6 +105,8 @@ class TabbarViewController: ESTabBarController {
         tab2NavigationController.tabBarItem = tab2
         tab3NavigationController.tabBarItem = tab3
         tab4NavigationController.tabBarItem = tab4
+        
+        tab1NavigationController.interactivePopGestureRecognizer?.isEnabled = true
         
         self.viewControllers = [
             tab1NavigationController,

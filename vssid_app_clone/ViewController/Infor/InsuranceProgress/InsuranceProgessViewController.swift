@@ -14,6 +14,8 @@ class InsuranceProgessViewController: UIViewController {
         setupControlEvent()
     }
     
+    
+    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
